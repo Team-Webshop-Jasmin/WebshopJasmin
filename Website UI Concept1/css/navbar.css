@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Bismillah;
+    src: url('../fonts/Bismillah.ttf');
+}
+
+ul {
+    margin: 0px;
+    padding-left: 10px;
+}
+
+nav {
+    padding: 15px 15px;
+    padding-bottom: 40px;
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li{
+    width: 150px;
+}
+
+li {
+    float: left;
+    padding-right: 10px;
+    list-style-type: none;
+    position: relative;
+}
+
+a {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Bismillah;
+    background: linear-gradient(90deg, #e6d7d5, #a69c9c, #d9bdbd, #736d6d, #424040);
+    border-radius: 40px;
+    padding: 6px 6px;
+    background-size: 400%
+}
+
+a:hover {
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 50%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}

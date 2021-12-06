@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Bismillah;
+    src: url('../fonts/Bismillah.ttf');
+}
+
+body {
+    font-family: ModernSans;
+    text-shadow: 2px 2px 5px black;
+    background-repeat: no-repeat;
+    background-image: repeating-linear-gradient(#000000, #262626, #0a0707);
+    line-height: 1.5;
+    font-size: 120%;
+    margin: 0px;
+}
+
+.lol-extra {}
+
+.extra-page {
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+#info {
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    max-height: 250px;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+header {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    min-height: 900px;
+}
+
+h1 {
+    padding: 320px 10px;
+    margin: auto;
+    max-width: 600px;
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 84%
+    }
+
+    50% {
+        background-position: 100% 17%
+    }
+
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 84%
+    }
+
+    50% {
+        background-position: 100% 17%
+    }
+
+    100% {
+        background-position: 0% 84%
+    }
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+section {
+    margin-right: 0px;
+    color: white;
+}
+
+.content {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.lastText {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 30px;
+}
