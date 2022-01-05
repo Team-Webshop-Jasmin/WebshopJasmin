@@ -78,8 +78,8 @@ description = "This is meta description"
 author = "Jasmin sweets"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-mapLatitude = "51.5223477"
-mapLongitude = "-0.1622023"
+mapLatitude = "48.291684"
+mapLongitude = "14.301026550763966"
 mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
