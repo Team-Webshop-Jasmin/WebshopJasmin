@@ -1,0 +1,7 @@
+######################## default configuration ####################
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Jasmin sweets'
+theme = 'hargo'
+
+############################## navigation ###############################
