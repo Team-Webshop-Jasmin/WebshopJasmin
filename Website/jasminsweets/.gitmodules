@@ -4,3 +4,9 @@
 [submodule "themes/hargo"]
 	path = themes/hargo
 	url = https://github.com/themefisher/hargo-hugo.git
+[submodule "themes/hargo-hugo"]
+	path = themes/hargo-hugo
+	url = https://github.com/themefisher/hargo-hugo.git
+[submodule "themes/vex-hugo"]
+	path = themes/vex-hugo
+	url = https://github.com/themefisher/vex-hugo.git

@@ -1,0 +1,20 @@
+############################ banner ##########################
+banner:
+  enable : true
+  title : "Orientalische Süßigkeiten, Regionale Zutaten. Frisch zubereitet"
+  image : "images/photo1.png"
+  # button
+  button:
+    enable : true
+    label : "Jetzt einkaufen"
+    link : "products"
+########################## About ##############################
+about:
+  enable : true
+  title : "Über unsere Produkte"
+  content : "Text..............."
+  image : "images/photo2.png"
+######################## Products #############################
+products:
+  enable : true
+  title : "Produkte"

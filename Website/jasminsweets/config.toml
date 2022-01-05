@@ -1,27 +1,109 @@
 ######################## default configuration ####################
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'Jasmin sweets'
-theme = 'hargo'
+baseURL = "https://examplesite.com"
+languageCode = "en"
+title = "Jasmin sweets"
+theme = "hargo-hugo"
+summaryLength = "20"
+paginate = 10
+disqusShortname = ""
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  link = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  link = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  link = "plugins/themify-icons/themify-icons.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  link = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  link = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  link = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  link = "plugins/google-map/gmap.js"
+
 
 ############################## navigation ###############################
 [menu]
-[[menu.main]]
-  name = "Products"
+
+  [[menu.main]]
+  name = "Produkte"
   URL = "products"
   weight = 1
 
   [[menu.main]]
-  name = "Blog"
-  URL = "blog"
+  name = "FAQ"
+  URL = "faq"
   weight = 2
 
   [[menu.main]]
-  name = "FAQ"
-  URL = "faq"
+  name = "Kontakt"
+  URL = "contact"
   weight = 3
 
-  [[menu.main]]
-  name = "Contact"
+  ############# footer menu #############
+  [[menu.footer]]
+  name = "Produkte"
+  URL = "products"
+  weight = 1
+
+  [[menu.footer]]
+  name = "FAQ"
+  URL = "faq"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Terms & Conditions"
+  URL = "terms-conditions"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Kontakt"
   URL = "contact"
   weight = 4
+
+
+#################### default parameters ################################
+[params]
+logo = "images/" #logo erstellen
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Jasmin sweets"
+# google map
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+mapLatitude = "51.5223477"
+mapLongitude = "-0.1622023"
+mapMarker = "images/marker.png"
+# Google Analitycs
+googleAnalitycsID = "" # Your ID
+# Contact Information
+mobile = "0124857985320"
+email = "demo@email.com"
+location = "Oberösterreich"
+# copyright
+copyright = "| Copyright &copy; 2022 Jasmin sweets All Rights Reserved |"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = ""
+
+  # Social Site
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-instagram"
+  link = "#"
+
+  # Contact Form
+  [params.contact]
+  formAction = "#" # contact form works with formspree.io
