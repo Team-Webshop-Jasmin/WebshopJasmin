@@ -1,63 +1,128 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
-  <meta charset="utf-8">
+<html lang="en"><head>
+  <meta charset="UTF-8">
   <title>Jasmin sweets</title>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
-  
+  <!-- Mobile Responsive Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Jasmin sweets">
   <meta name="generator" content="Hugo 0.91.2" />
 
-  <!-- plugins -->
+  <!-- Plugins -->
+  
+  <link rel="stylesheet" href="https://examplesite.com/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://examplesite.com/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://examplesite.com/plugins/themify-icons/themify-icons.css">
+  
+
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="http://example.org/scss/style.min.css" media="screen">
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="http://example.org/images/favicon.png " type="image/x-icon">
-  <link rel="icon" href="http://example.org/images/favicon.png " type="image/x-icon">
-
+  <link rel="stylesheet" href="https://examplesite.com/scss/style.min.css" media="screen">
   
-  <meta property="og:title" content="Jasmin sweets" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/" />
+  <link href="https://examplesite.com/css/override.css" rel="stylesheet"/>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://examplesite.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://examplesite.com/images/favicon.png " type="image/x-icon">
 
 
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
   
-
-</head><body id="body">
-<header class="sticky-top bg-white">
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="sticky-top navigation">
   <div class="container">
+    
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/"> Jasmin sweets </a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
-        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="https://examplesite.com"><img class="img-fluid" src="https://examplesite.com/images/" alt="Jasmin sweets"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav ml-auto">
-          
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="http://example.org/products">Produkte</a>
+            <a class="nav-link" href="https://examplesite.com"> Home </a>
           </li>
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="http://example.org/contact">Kontakt</a>
+            <a class="nav-link" href="https://examplesite.com/products">Produkte</a>
           </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com/faq">FAQ</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com/contact">Kontakt</a>
+          </li>
+          
           
         </ul>
-        
-        
       </div>
-      
+      <button class="cart snipcart-summary"><a href="" class="snipcart-checkout text-dark"><i class="ti-shopping-cart"></i><span class="badge badge-primary snipcart-items-count"></span></a></button>
     </nav>
   </div>
 </header>
+<!-- /navigation -->
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-5 col-md-6 order-2 order-md-1">
+        <h1>Orientalische Süßigkeiten, Regionale Zutaten. Frisch zubereitet</h1>
+        <p></p>
+        
+        
+        <a href="products" class="btn btn-primary mr-3">Jetzt einkaufen</a>
+        
+        
+
+        
+      </div>
+      <div class="col-lg-7 col-md-6 order-1 order-lg-2">
+        <img src="https://examplesite.com/images/photo1.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around align-items-center">
+      <div class="col-lg-5 col-md-6">
+        <img class="img-fluid" src="https://examplesite.com/images/photo2.png" alt="">
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <h2>Über unsere Produkte</h2>
+        <p>Text&hellip;&hellip;&hellip;&hellip;&hellip;</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -68,29 +133,239 @@
 
 
 
-<footer>
-  <div class="container text-center">
+
+
+
+
+
+
+
+
+
+
+<section class="section pb-0">
+  <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <a href="/" class="mb-4 d-inline-block"> Jasmin sweets </a>
-          <ul class="list-inline footer-menu">
+      <div class="col-12 text-center mb-4">
+        
+        <h2>Produkte</h2>
+        
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          <a href="https://examplesite.com/products/taba-cream.1/">
             
-            <li class="list-inline-item">
-              <a href="http://example.org/products">Products</a>
-            </li>
+            <img src="https://examplesite.com/images/products/product-2.png" alt="" class="card-img-top">
             
-            <li class="list-inline-item">
-              <a href="http://example.org/terms-conditions">Terms &amp; Conditions</a>
-            </li>
-            
-            <li class="list-inline-item">
-              <a href="http://example.org/contact">Contact</a>
-            </li>
-            
-          </ul>
-          <p class="copyright-text"></p>
+          </a>
+          <div class="card-body">
+            <a href="https://examplesite.com/products/taba-cream.1/" class="h4">Taba Cream</a>
+            <p>For Glowing Skin</p>
+            <div class="mb-4">
+              
+              <s>25.00</s>
+              
+              <span class="lead text-primary">20.00</span>
+            </div>
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="1"
+              data-item-name="Taba Cream"  data-item-image="https://examplesite.com/images/products/product-2.png"
+               data-item-price="20.00" data-item-url="https://examplesite.com/products/taba-cream.1/" data-item-description="For Glowing Skin">
+              Add to cart
+            </button>
+          </div>
         </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          <a href="https://examplesite.com/products/taba-cream.2/">
+            
+            <img src="https://examplesite.com/images/products/product-3.png" alt="" class="card-img-top">
+            
+          </a>
+          <div class="card-body">
+            <a href="https://examplesite.com/products/taba-cream.2/" class="h4">Taba Cream</a>
+            <p>For Glowing Skin</p>
+            <div class="mb-4">
+              
+              <s>25.00</s>
+              
+              <span class="lead text-primary">20.00</span>
+            </div>
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="2"
+              data-item-name="Taba Cream"  data-item-image="https://examplesite.com/images/products/product-3.png"
+               data-item-price="20.00" data-item-url="https://examplesite.com/products/taba-cream.2/" data-item-description="For Glowing Skin">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          <a href="https://examplesite.com/products/taba-cream/">
+            
+            <img src="https://examplesite.com/images/products/product-1.png" alt="" class="card-img-top">
+            
+          </a>
+          <div class="card-body">
+            <a href="https://examplesite.com/products/taba-cream/" class="h4">Taba Cream</a>
+            <p>For Glowing Skin</p>
+            <div class="mb-4">
+              
+              <span class="lead text-primary">20.00</span>
+            </div>
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="3"
+              data-item-name="Taba Cream"  data-item-image="https://examplesite.com/images/products/product-1.png"
+               data-item-price="20.00" data-item-url="https://examplesite.com/products/taba-cream/" data-item-description="For Glowing Skin">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          <a href="https://examplesite.com/products/taba-facewash.1/">
+            
+            <img src="https://examplesite.com/images/products/product-4.png" alt="" class="card-img-top">
+            
+          </a>
+          <div class="card-body">
+            <a href="https://examplesite.com/products/taba-facewash.1/" class="h4">Taba Facewash</a>
+            <p>For Glowing Skin</p>
+            <div class="mb-4">
+              
+              <s>49.00</s>
+              
+              <span class="lead text-primary">40.00</span>
+            </div>
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="4"
+              data-item-name="Taba Facewash"  data-item-image="https://examplesite.com/images/products/product-4.png"
+               data-item-price="40.00" data-item-url="https://examplesite.com/products/taba-facewash.1/" data-item-description="For Glowing Skin">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          <a href="https://examplesite.com/products/taba-facewash.2/">
+            
+            <img src="https://examplesite.com/images/products/product-6.png" alt="" class="card-img-top">
+            
+          </a>
+          <div class="card-body">
+            <a href="https://examplesite.com/products/taba-facewash.2/" class="h4">Taba Facewash</a>
+            <p>For Glowing Skin</p>
+            <div class="mb-4">
+              
+              <s>29.00</s>
+              
+              <span class="lead text-primary">26.00</span>
+            </div>
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="5"
+              data-item-name="Taba Facewash"  data-item-image="https://examplesite.com/images/products/product-6.png"
+               data-item-price="26.00" data-item-url="https://examplesite.com/products/taba-facewash.2/" data-item-description="For Glowing Skin">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          <a href="https://examplesite.com/products/taba-facewash/">
+            
+            <img src="https://examplesite.com/images/products/product-5.png" alt="" class="card-img-top">
+            
+          </a>
+          <div class="card-body">
+            <a href="https://examplesite.com/products/taba-facewash/" class="h4">Taba Facewash</a>
+            <p>For Glowing Skin</p>
+            <div class="mb-4">
+              
+              <s>25.00</s>
+              
+              <span class="lead text-primary">20.00</span>
+            </div>
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="6"
+              data-item-name="Taba Facewash"  data-item-image="https://examplesite.com/images/products/product-5.png"
+               data-item-price="20.00" data-item-url="https://examplesite.com/products/taba-facewash/" data-item-description="For Glowing Skin">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer class="section pb-0">
+  <div class="container">
+    <div class="row border-bottom pb-5 justify-content-between">
+      <div class="col-12 text-center section-sm">
+        <a href="https://examplesite.com"><img src="https://examplesite.com/images/" class="img-fluid"
+            alt="Jasmin sweets"></a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="font-weight-medium mb-4">Wichtige Links</h5>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/products">Produkte</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/faq">FAQ</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/terms-conditions">Terms &amp; Conditions</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/contact">Kontakt</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <h5 class="font-weight-medium mb-4">Verbinde dich mit uns</h5>
+        <ul class="list-unstyled mb-5">
+          <li class="mb-3"><a class="text-color" href="tel:0124857985320"><i
+                class="ti-mobile text-primary mr-2"></i>
+              0124857985320</a></li>
+          <li class="mb-3"><a class="text-color" href="mailto:demo@email.com"><i
+                class="ti-email text-primary mr-2"></i> demo@email.com</a></li>
+          <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i> Oberösterreich
+          </li>
+        </ul>
+        
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-facebook text-primary"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-instagram text-primary"></i></a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-5">
+        <h5 class="font-weight-medium mb-4">Kontaktiere uns</h5>
+        <form action="#" method="POST">
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Ihre Name">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Ihre Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Ihre Nachricht"></textarea>
+          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Sende Jetzt</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center py-4">
+        | Copyright © 2022 Jasmin sweets All Rights Reserved |
       </div>
     </div>
   </div>
@@ -98,13 +373,25 @@
 
 
 
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+<!-- JS Plugins -->
+
+<script src="https://examplesite.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://examplesite.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://examplesite.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://examplesite.com/plugins/google-map/gmap.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://examplesite.com/js/script.min.js"></script>
 
 
 
 
-
-
-
-<script src="http://example.org/js/script.js"></script></body>
-
+</body>
 </html>

@@ -81,19 +81,16 @@ gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSp
 mapLatitude = "48.291684"
 mapLongitude = "14.301026550763966"
 mapMarker = "images/marker.png"
-# Google Analitycs
-googleAnalitycsID = "" # Your ID
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Oberösterreich"
+mobile = "0676 6527623"
+location = "Hamerlingstraße 28"
 # copyright
 copyright = "| Copyright &copy; 2022 Jasmin sweets All Rights Reserved |"
 
   # Preloader
-  [params.preloader]
-  enable = true
-  preloader = ""
+ [params.preloader]
+ enable = true
+ preloader = ""
 
   # Social Site
   [[params.social]]
