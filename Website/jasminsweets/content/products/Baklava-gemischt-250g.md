@@ -11,7 +11,7 @@ price: "20.00"
 priceBefore: ""
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: ""
 
 #product ID
 productID: "3"
