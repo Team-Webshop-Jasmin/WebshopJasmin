@@ -7,8 +7,8 @@ draft: false
 description : ""
 
 # product Price
-price: "26.00"
-priceBefore: "29.00"
+price: "26.00€"
+priceBefore: "29.00€"
 
 # Product Short Description
 shortDescription: ""
@@ -23,6 +23,6 @@ type: "products"
 # first image will be shown in the product page
 images:
   - image: "images/Torte5pers.png"
- 
+
 ---
 Torte
