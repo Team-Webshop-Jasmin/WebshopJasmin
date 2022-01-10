@@ -2,7 +2,7 @@
 baseURL = "https://examplesite.com"
 languageCode = "en"
 title = "Jasmin sweets"
-theme = "hargo-hugo"
+theme = "hargo-hugo1"
 summaryLength = "20"
 paginate = 10
 disqusShortname = ""
@@ -86,6 +86,9 @@ mobile = "0676 6527623"
 location = "Hamerlingstraße 28"
 # copyright
 copyright = "| Copyright &copy; 2022 Jasmin sweets All Rights Reserved |"
+# Snipcart Credentials
+snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
+currencySymbol = "$"
 
   # Preloader
  [params.preloader]
