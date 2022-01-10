@@ -7,8 +7,8 @@ draft: false
 description : ""
 
 # product Price
-price: "34.00€"
-priceBefore: "40.00€"
+price: "34.00"
+priceBefore: "40.00"
 
 # Product Short Description
 shortDescription: ""
