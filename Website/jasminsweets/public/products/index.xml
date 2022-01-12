@@ -1,91 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Products on Jasmin sweets</title>
+    <title>Produkte on Jasmin sweets</title>
     <link>https://examplesite.com/products/</link>
-    <description>Recent content in Products on Jasmin sweets</description>
+    <description>Recent content in Produkte on Jasmin sweets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Oct 2019 11:22:16 +0600</lastBuildDate><atom:link href="https://examplesite.com/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Taba Cream</title>
-      <link>https://examplesite.com/products/taba-cream.1/</link>
+      <title>Baklava Gemischt  / 1Kg Honig</title>
+      <link>https://examplesite.com/products/baklava-gemischt-1kg/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://examplesite.com/products/taba-cream.1/</guid>
+      <guid>https://examplesite.com/products/baklava-gemischt-1kg/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
-      <title>Taba Cream</title>
-      <link>https://examplesite.com/products/taba-cream.2/</link>
+      <title>Baklava gemischt 250g</title>
+      <link>https://examplesite.com/products/baklava-gemischt-250g/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://examplesite.com/products/taba-cream.2/</guid>
+      <guid>https://examplesite.com/products/baklava-gemischt-250g/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
-      <title>Taba Cream</title>
-      <link>https://examplesite.com/products/taba-cream/</link>
+      <title>Baklava gemischt 500g</title>
+      <link>https://examplesite.com/products/baklava-gemischt-500g/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://examplesite.com/products/taba-cream/</guid>
+      <guid>https://examplesite.com/products/baklava-gemischt-500g/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
-      <title>Taba Facewash</title>
-      <link>https://examplesite.com/products/taba-facewash.1/</link>
+      <title>Baklava gemischt in Holzbox</title>
+      <link>https://examplesite.com/products/baklava-gemischt-in-holzbox/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://examplesite.com/products/taba-facewash.1/</guid>
+      <guid>https://examplesite.com/products/baklava-gemischt-in-holzbox/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
-      <title>Taba Facewash</title>
-      <link>https://examplesite.com/products/taba-facewash.2/</link>
+      <title>Torte für 5 Personen</title>
+      <link>https://examplesite.com/products/torte/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://examplesite.com/products/taba-facewash.2/</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
-    </item>
-    
-    <item>
-      <title>Taba Facewash</title>
-      <link>https://examplesite.com/products/taba-facewash/</link>
-      <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
-      
-      <guid>https://examplesite.com/products/taba-facewash/</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
-    </item>
-    
-    <item>
-      <title>Taba Shampoo</title>
-      <link>https://examplesite.com/products/taba-shampoo.1/</link>
-      <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
-      
-      <guid>https://examplesite.com/products/taba-shampoo.1/</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
-    </item>
-    
-    <item>
-      <title>Taba Shampoo</title>
-      <link>https://examplesite.com/products/taba-shampoo.2/</link>
-      <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
-      
-      <guid>https://examplesite.com/products/taba-shampoo.2/</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
-    </item>
-    
-    <item>
-      <title>Taba Shampoo</title>
-      <link>https://examplesite.com/products/taba-shampoo/</link>
-      <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
-      
-      <guid>https://examplesite.com/products/taba-shampoo/</guid>
-      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+      <guid>https://examplesite.com/products/torte/</guid>
+      <description>Torte</description>
     </item>
     
   </channel>
