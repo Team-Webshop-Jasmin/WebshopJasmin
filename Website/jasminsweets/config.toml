@@ -2,7 +2,7 @@
 baseURL = "https://examplesite.com"
 languageCode = "en"
 title = "Jasmin sweets"
-theme = "hargo-hugo"
+theme = "hargo-hugo1"
 summaryLength = "20"
 paginate = 10
 disqusShortname = ""
