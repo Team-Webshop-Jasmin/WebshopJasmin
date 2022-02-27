@@ -28,10 +28,6 @@ public class SalesOrder {
 
     public SalesOrder(){}
 
-    public SalesOrder(int id) {
-        this.id = id;
-    }
-
     public int getId() {
         return id;
     }

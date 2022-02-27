@@ -1,9 +1,6 @@
 package at.htlleonding.persistence;
 
-import org.hibernate.annotations.JoinColumnOrFormula;
-
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -41,9 +38,9 @@ public class Customer {
     @JoinColumn(name = "cart_id")
     private ShoppingCart shoppingCart;
 
-    public Customer(){}
+    public Customer(String firstName, String lastName){}
 
-    public Customer(int id, String firstName, String lastName, String phoneNumber) {
+    public Customer(String firstName, String lastName, String phoneNumber) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

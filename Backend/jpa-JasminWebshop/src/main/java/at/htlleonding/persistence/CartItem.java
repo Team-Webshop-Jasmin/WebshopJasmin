@@ -24,8 +24,7 @@ public class CartItem {
 
     public CartItem(){}
 
-    public CartItem(int id, int quantity, double price) {
-        this.id = id;
+    public CartItem(int quantity, double price) {
         this.quantity = quantity;
         this.price = price;
     }

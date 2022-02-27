@@ -24,8 +24,7 @@ public class ShoppingCart {
 
     public ShoppingCart(){}
 
-    public ShoppingCart(int id, double totalPrice) {
-        this.id = id;
+    public ShoppingCart(double totalPrice) {
         this.totalPrice = totalPrice;
     }
 
