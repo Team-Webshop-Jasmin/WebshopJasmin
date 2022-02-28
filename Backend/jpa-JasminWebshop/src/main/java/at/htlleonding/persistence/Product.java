@@ -19,7 +19,7 @@ public class Product {
     @Column()
     private int stock;
 
-    @OneToMany(mappedBy = "Product")
+    @OneToMany(mappedBy = "product")
     private Set<CartItem> cartItems = new HashSet<>();
 
     public Product(){}

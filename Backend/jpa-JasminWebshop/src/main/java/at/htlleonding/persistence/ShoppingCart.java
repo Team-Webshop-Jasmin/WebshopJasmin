@@ -16,10 +16,10 @@ public class ShoppingCart {
     @OneToOne
     private Customer customer;
 
-    @OneToMany(mappedBy = "ShoppingCart")
+    @OneToMany(mappedBy = "shoppingCart")
     private Set<CartItem> cartItems = new HashSet<>();
 
-    @OneToMany(mappedBy = "ShoppingCart")
+    @OneToMany(mappedBy = "shoppingCart")
     private Set<SalesOrder> salesOrders = new HashSet<>();
 
     public ShoppingCart(){}

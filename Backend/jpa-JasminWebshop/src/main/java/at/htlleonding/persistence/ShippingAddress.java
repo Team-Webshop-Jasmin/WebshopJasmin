@@ -27,7 +27,7 @@ public class ShippingAddress {
     @ManyToOne
     private Customer customer;
 
-    @OneToMany(mappedBy = "ShippingAddress")
+    @OneToMany(mappedBy = "shippingAddress")
     private Set<SalesOrder> salesOrders = new HashSet<>();
 
 

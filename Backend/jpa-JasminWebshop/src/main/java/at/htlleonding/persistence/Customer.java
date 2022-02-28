@@ -19,32 +19,34 @@ public class Customer {
     @Column
     private String phoneNumber;
 
-    @OneToOne(mappedBy = "Customer")
+    @OneToOne()
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "Customer")
+    @OneToMany()
     @JoinColumn(name = "billing_adress_id")
     private Set<BillingAddress> billingAddresses = new HashSet<>();
 
-    @OneToMany(mappedBy = "Customer")
+    @OneToMany()
     @JoinColumn(name = "shipping_adress_id")
     private Set<ShippingAddress> shippingAddresses = new HashSet<>();
 
-    @OneToMany(mappedBy = "Customer")
+    @OneToMany(mappedBy = "customer")
     private Set<SalesOrder> salesOrders = new HashSet<>();
 
-    @OneToOne(mappedBy = "Customer")
+    @OneToOne()
     @JoinColumn(name = "cart_id")
     private ShoppingCart shoppingCart;
-
-    public Customer(String firstName, String lastName){}
 
     public Customer(String firstName, String lastName, String phoneNumber) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
+    }
+
+    public Customer() {
+
     }
 
     public int getId() {

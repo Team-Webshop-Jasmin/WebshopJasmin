@@ -22,10 +22,10 @@ public class BillingAddress {
     @Column
     private String country;
 
-    @ManyToOne
+    @ManyToOne()
     private Customer customer;
 
-    @OneToMany(mappedBy = "BillingAdress")
+    @OneToMany()
     private Set<SalesOrder> salesOrders = new HashSet<>();
 
     public BillingAddress() {
