@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
 languageCode = "en"
-title = "Jasmin sweets"
+title = "Jasmin Sweets"
 summaryLength = "20"
 paginate = 10
 disqusShortname = ""
@@ -97,11 +97,11 @@ currencySymbol = "€"
   # Social Site
   [[params.social]]
   icon = "ti-facebook"
-  link = "#"
+  link = "https://www.facebook.com/jasminorientalsweets/community/"
 
   [[params.social]]
   icon = "ti-instagram"
-  link = "#"
+  link = "https://www.instagram.com/jasmin.oriental.sweets/"
 
   # Contact Form
   [params.contact]
