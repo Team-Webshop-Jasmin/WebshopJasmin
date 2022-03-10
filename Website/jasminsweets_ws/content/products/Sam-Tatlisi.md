@@ -8,6 +8,7 @@ description : ""
 
 # product Price
 price: "28.00"
+beforeprice: ""
 
 # Product Short Description
 shortDescription: ""

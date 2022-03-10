@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
-languageCode = "en"
+baseURL = ""
+languageCode = "de"
 title = "Jasmin sweets"
 summaryLength = "20"
 paginate = 10
@@ -58,7 +58,7 @@ disqusShortname = ""
   weight = 2
 
   [[menu.footer]]
-  name = "Terms & Conditions"
+  name = "Allgemeine Geschäftsbedingungen"
   URL = "terms-conditions"
   weight = 3
 
@@ -73,8 +73,8 @@ disqusShortname = ""
 logo = "images/ShopLogo.png" #logo erstellen
 home = "Home"
 # Meta data
-description = "This is meta description"
-author = "Jasmin sweets"
+description = "Orientalische Süßigkeiten, Regionale Zutaten. Frisch zubereitet"
+author = "Jasmin Sweets"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 mapLatitude = "48.291684"
@@ -84,7 +84,7 @@ mapMarker = "images/marker.png"
 mobile = "0676 6527623"
 location = "Hamerlingstraße 28"
 # copyright
-copyright = "| Copyright &copy; 2022 Jasmin sweets All Rights Reserved |"
+copyright = "| Copyright &copy; 2022 Jasmin Sweets Alle Rechte vorbehalten |"
 # Snipcart Credentials
 snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
 currencySymbol = "€"
@@ -92,16 +92,12 @@ currencySymbol = "€"
   # Preloader
  [params.preloader]
  enable = true
- preloader = ""
+ preloader = "images/ShopLogo.png"
 
   # Social Site
-  [[params.social]]
-  icon = "ti-facebook"
-  link = "#"
-
-  [[params.social]]
+[[params.social]]
   icon = "ti-instagram"
-  link = "#"
+  link = "https://www.instagram.com/jasmin.oriental.sweets/?hl=de"
 
   # Contact Form
   [params.contact]
