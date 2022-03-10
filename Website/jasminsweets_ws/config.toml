@@ -58,7 +58,7 @@ disqusShortname = ""
   weight = 2
 
   [[menu.footer]]
-  name = "Terms & Conditions"
+  name = "Allgemeine Geschäftsbedingungen"
   URL = "terms-conditions"
   weight = 3
 
@@ -84,7 +84,7 @@ mapMarker = "images/marker.png"
 mobile = "0676 6527623"
 location = "Hamerlingstraße 28"
 # copyright
-copyright = "| Copyright &copy; 2022 Jasmin sweets All Rights Reserved |"
+copyright = "| Copyright &copy; 2022 Jasmin Sweets Alle Rechte vorbehalten |"
 # Snipcart Credentials
 snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
 currencySymbol = "€"
