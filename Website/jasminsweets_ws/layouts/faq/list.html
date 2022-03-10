@@ -23,6 +23,7 @@
       </div></div>
       {{ with site.Data.faq}}
       <div class="col-lg-7 offset-lg-1">
+        <h3 class="mb-4">Häufig gestellten Fragen</h3>
         <div id="accordion" class="mt-5">
           {{ $.Scratch.Set "counter" 0 }}
           {{ range .faqItem }}

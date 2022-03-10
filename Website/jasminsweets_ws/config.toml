@@ -70,10 +70,10 @@ disqusShortname = ""
 
 #################### default parameters ################################
 [params]
-logo = "images/ShopLogo.png" #logo erstellen
+logo = "images/ShopLogo.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
+description = "Von Kunafah bis zu Baklava, gibt es alles an Süßwaren was Ihr Herz begehrt."
 author = "Jasmin sweets"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
