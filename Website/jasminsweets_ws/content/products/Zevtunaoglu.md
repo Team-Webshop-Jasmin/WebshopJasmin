@@ -10,7 +10,7 @@ description : ""
 price: "28.00"
 
 # Product Short Description
-shortDescription: ""
+shortDescription: "Baklava Mischung mit Honig statt Zucker"
 
 #product ID
 productID: "5"
@@ -24,4 +24,5 @@ images:
   - image: "images/products/Produkt 4/2bda714a-dfa1-4ff1-bb3b-1490c4bc7db8.PNG"
 
 ---
-Torte
+Wer sagt das Süßes ungesund sein muss. Für unsere Kunden haben wir Baklava ohne Zucker aber genau so süß wie normal.
+Honig gibt die Baklavamischung eine neue Demension von Geschmack und ein neues erlebnis für den der sie schmeckt.
