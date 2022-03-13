@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kontakt on Jasmin Sweets</title>
-    <link>https://examplesite.com/contact/</link>
+    <link>http://jasminsweets.myvnc.com/contact/</link>
     <description>Recent content in Kontakt on Jasmin Sweets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Oct 2019 11:22:16 +0600</lastBuildDate><atom:link href="https://examplesite.com/contact/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Oct 2019 11:22:16 +0600</lastBuildDate><atom:link href="http://jasminsweets.myvnc.com/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

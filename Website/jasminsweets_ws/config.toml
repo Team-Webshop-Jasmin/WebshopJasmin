@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "http://jasminsweets.myvnc.com/"
 languageCode = "en"
 title = "Jasmin Sweets"
 summaryLength = "20"
@@ -86,7 +86,7 @@ location = "Hamerlingstraße 28"
 # copyright
 copyright = "| Copyright &copy; 2022 Jasmin Sweets Alle Rechte vorbehalten |"
 # Snipcart Credentials
-snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
+snipcartApiKey = "YWJiYTQ3NWMtOTY2Zi00M2M1LWI5ZTctM2NkNmRhNjhhOGYzNjM3ODI3OTQ5MDQ5MTMwMTQx"
 currencySymbol = "€"
 
   # Preloader
@@ -105,4 +105,4 @@ currencySymbol = "€"
 
   # Contact Form
   [params.contact]
-  formAction = "#" # contact form works with formspree.io
+  formAction = "https://formspree.io/f/mvolqobw" # contact form works with formspree.io
