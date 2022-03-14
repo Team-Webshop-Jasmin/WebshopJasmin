@@ -24,5 +24,5 @@ images:
   - image: "images/products/Produkt 4/2bda714a-dfa1-4ff1-bb3b-1490c4bc7db8.PNG"
 
 ---
-Wer sagt das Süßes ungesund sein muss. Für unsere Kunden haben wir Baklava mit Hongi anstatt Zucker jedoch bleibt der bekannte und wohlschmeckende Baklavageschmack erhalten.
+Wer sagt das Süßes ungesund sein muss. Für unsere Kunden haben wir Baklava mit Honig anstatt Zucker jedoch bleibt der bekannte und wohlschmeckende Baklavageschmack erhalten.
 Honig gibt der Baklavamischung eine neue Dimension von Geschmack und ein neues Erlebnis.

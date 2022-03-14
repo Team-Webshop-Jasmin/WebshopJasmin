@@ -7,7 +7,7 @@ draft: false
 description : ""
 
 # product Price
-price: "30.00"
+price: "20.00"
 
 # Product Short Description
 shortDescription: "Delikate Nussmischungen"
