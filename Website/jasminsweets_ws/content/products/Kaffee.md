@@ -10,7 +10,7 @@ description : ""
 price: "30.00"
 
 # Product Short Description
-shortDescription: "Das beste arabische Kaffe in OÖ"
+shortDescription: "Der beste arabische Kaffee in ganz Linz"
 
 #product ID
 productID: "6"
@@ -24,4 +24,4 @@ images:
   - image: "images/products/Produkt 6/kaffeebohnen.png"
 
 ---
-In der arabischen Kultur ist Kaffee ein sehr wichtiges Getränk. Unser Kaffe ist eine Mischung aus Colomianishce und Brazilianische bohnen mit Kardamon gemahlen um einen besonderen Nachgeschmack zu erhalten. Nur für Kaffeeliebhaber empfohlen. 
+In der arabischen Kultur ist Kaffee ein sehr wichtiges Getränk. Unser Kaffee ist eine Mischung aus Kolumbianischen und Brazilianischen Bohnen mit Kardamom gemahlen um einen besonderen Nachgeschmack zu erhalten. Nur für Kaffeeliebhaber empfohlen. 
