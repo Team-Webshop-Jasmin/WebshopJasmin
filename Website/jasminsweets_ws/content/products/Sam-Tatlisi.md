@@ -1,5 +1,5 @@
 ---
-title: "Bakavamischung 700g"
+title: "Baklavamischung 700g"
 date: 2019-10-17T11:22:16+06:00
 draft: false
 
@@ -26,4 +26,4 @@ images:
 
 ---
 
-Eine Mischung aus Baklava von bester Qualität. Sie haben die möglichkeiten die verschiedenen Spezialitäten zu probieren und sich selbst zu überzeugen. 
+Eine Mischung aus Baklava von bester Qualität. Sie haben die Möglichkeit die verschiedenen Spezialitäten zu probieren und sich selbst zu überzeugen. Lassen Sie sich von einer Mischung an feinsten Baklavasorten überraschen.
