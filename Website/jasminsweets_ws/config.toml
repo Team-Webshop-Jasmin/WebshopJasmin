@@ -82,6 +82,7 @@ mapLongitude = "14.301026550763966"
 mapMarker = "images/marker.png"
 # Contact Information
 mobile = "0676 6527623"
+email = "jasmin.webshop@gmail.com"
 location = "Hamerlingstraße 28"
 # copyright
 copyright = "| Copyright &copy; 2022 Jasmin Sweets Alle Rechte vorbehalten |"
@@ -92,7 +93,7 @@ currencySymbol = "€"
   # Preloader
  [params.preloader]
  enable = true
- preloader = ""
+ preloader = "images/ShopLogo.png"
 
   # Social Site
   [[params.social]]
