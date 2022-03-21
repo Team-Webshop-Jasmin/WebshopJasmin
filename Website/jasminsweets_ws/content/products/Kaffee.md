@@ -7,13 +7,17 @@ draft: false
 description : ""
 
 # product Price
-price: "30.00"
+price: "18.00"
 
 # Product Short Description
 shortDescription: "Der beste arabische Kaffee in ganz Linz"
 
 #product ID
 productID: "6"
+
+#Gramm
+name: "Wie viel Gramm?"
+amount: "250g[-13.50]|500g[-9.00]|1000g"
 
 # type must be "products"
 type: "products"

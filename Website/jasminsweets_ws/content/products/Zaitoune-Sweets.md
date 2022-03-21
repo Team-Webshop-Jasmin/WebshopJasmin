@@ -1,5 +1,5 @@
 ---
-title: "Zaitoune Sweets 250g"
+title: "Zaitoune Sweets"
 date: 2019-10-17T11:22:16+06:00
 draft: false
 
@@ -8,13 +8,17 @@ description : ""
 
 # product Price
 price: "18.00"
-priceBefore: "20.00"
+priceBefore: ""
 
 # Product Short Description
 shortDescription: "Arabische Kekse gefüllt mit Pistazien"
 
 #product ID
 productID: "3"
+
+#Gramm
+name: "Wie viel Gramm?"
+amount: "500g"
 
 # type must be "products"
 type: "products"
