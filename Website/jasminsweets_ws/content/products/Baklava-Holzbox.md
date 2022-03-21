@@ -25,5 +25,5 @@ images:
 
 ---
 
-Eine Mischung aus Baklava von bester Qualität. Sie haben die auch die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. 
-Das alles in einer hochwertigen Holzbox verpackt. Auch für Geschenke perfekt geeignet.
+Eine Mischung aus Baklava von bester Qualität. Sie haben auch die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. 
+Das alles in einer hochwertigen Holzbox verpackt. Auch als Geschenk perfekt geeignet.

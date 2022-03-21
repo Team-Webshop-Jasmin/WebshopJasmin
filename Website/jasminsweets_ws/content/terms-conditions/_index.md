@@ -7,7 +7,7 @@ description : "this is a meta description"
 
 ### Allgemeine Geschäftsbedingunge
 
-Bitte lesen Sie die unten aufgeführten Allgemeinen Geschäftsbedingungen, die viele rechtliche Vorteile enthalten, aber unterm Strich ist es unser Ziel, uns immer um uns beide zu kümmern, sowohl als Kunde als auch als Verkäufer. Wir haben viele dieser Bedingungen eingefügt, um uns rechtlich zu schützen, aber wenn Sie ein Problem haben, können Sie uns jederzeit eine E-Mail an "EMAIL" senden, und wir werden unser Bestes tun, um es fair und zeitnah zu lösen.
+Bitte lesen Sie die unten aufgeführten Allgemeinen Geschäftsbedingungen, die viele rechtliche Vorteile enthalten, aber unterm Strich ist es unser Ziel, uns immer um uns beide zu kümmern, sowohl als Kunde als auch als Verkäufer. Wir haben viele dieser Bedingungen eingefügt, um uns rechtlich zu schützen, aber wenn Sie ein Problem haben, können Sie uns jederzeit eine E-Mail an jasmin.webshop@gmail.com senden, und wir werden unser Bestes tun, um es fair und zeitnah zu lösen.
 
 ### Produktkauf- und Lieferrichtlinie
 
