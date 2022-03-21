@@ -26,4 +26,4 @@ images:
   - image: "images/products/Produkt 2/Zaitoune_sweets2.png"
 
 ---
-Süße, weiche und geschmacksvolle Kekse gefüllt mit hochwertigen Pistazienüssen. Nicht zu Süß aber sehr geschmacksvoll.
+Süße, weiche und geschmacksvolle Kekse gefüllt mit delikater Pistazienfüllung. Nicht zu Süß und sehr geschmacksvoll.

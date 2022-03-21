@@ -26,4 +26,4 @@ images:
 
 ---
 
-Eine Mischung aus Baklava von bester Qualität. Sie haben die möglichkeiten die verschiedenen Spezialitäten zu probieren und sich selbst zu überzeugen. 
+Eine Mischung aus Baklava von bester Qualität. Sie haben die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. 

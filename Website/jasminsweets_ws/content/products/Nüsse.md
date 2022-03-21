@@ -10,7 +10,7 @@ description : ""
 price: "30.00"
 
 # Product Short Description
-shortDescription: "Gealzene Nussmischung"
+shortDescription: "Delikate Nussmischungen"
 
 #product ID
 productID: "7"
@@ -24,4 +24,4 @@ images:
   - image: "images/products/Produkt 7/nüsse.jpeg"
 
 ---
-Eine Mischung aus den höchstwertigsten Nüssen die es zu haben gibt. Wir haben geräucherte oder nur gesalzene Mischung. Sie können sich auch selber Ihre eigene Mischung gestallten. 
+Eine Mischung aus den höchstwertigsten Nüssen die zu erwerben sind. Wir haben geräucherte oder nur gesalzene Mischungen. Sie können sich auch selber Ihre eigene individuelle Mischung gestalten. 
