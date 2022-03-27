@@ -7,7 +7,7 @@ description : "this is a meta description"
 
 ### Allgemeine Geschäftsbedingunge
 
-Bitte lesen Sie die unten aufgeführten Allgemeinen Geschäftsbedingungen, die viele rechtliche Vorteile enthalten, aber unterm Strich ist es unser Ziel, uns immer um uns beide zu kümmern, sowohl als Kunde als auch als Verkäufer. Wir haben viele dieser Bedingungen eingefügt, um uns rechtlich zu schützen, aber wenn Sie ein Problem haben, können Sie uns jederzeit eine E-Mail an jasmin.webshop@gmail.com senden, und wir werden unser Bestes tun, um es fair und zeitnah zu lösen.
+Bitte lesen Sie die unten aufgeführten Allgemeinen Geschäftsbedingungen, die viele rechtliche Vorteile enthalten, aber unterm Strich ist es unser Ziel, uns immer um sowohl den Kunden als auch um uns die Verkäufer zu kümmern. Wir haben viele dieser Bedingungen eingefügt, um uns rechtlich zu schützen, aber wenn Sie ein Problem haben, können Sie uns jederzeit per E-Mail an jasmin.webshop@gmail.com erreichen, und wir werden unser Bestes tun, um das Problem fair und zeitnah zu lösen.
 
 ### Produktkauf- und Lieferrichtlinie
 
@@ -15,4 +15,4 @@ Bitte lesen Sie die unten aufgeführten Allgemeinen Geschäftsbedingungen, die v
 
 ### Rückgaberecht
 
-1) Da es sich um Lebensmittel handelt, gibt es keine Rückerstattung
+1) Da es sich bei uns um den Verkauf von Lebensmitteln handelt, können wir keine Rückerstattungen erlauben
