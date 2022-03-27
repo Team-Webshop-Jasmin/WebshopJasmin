@@ -1,9 +1,7 @@
-name: Deployment (dev)
-
+name: Deployment Workflow
 on:
   push:
-    branches:
-      [ master ]
+    branches:[ master ]
 
 jobs:
   job_one:
