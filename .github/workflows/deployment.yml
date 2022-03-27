@@ -17,6 +17,6 @@ jobs:
         key: ${{ secrets.JASMIN_SECRET }}
         port: 22
         script: |
-        cd /var/www/hmtml
+        cd /var/www/html
         git pull origin master
         git status
