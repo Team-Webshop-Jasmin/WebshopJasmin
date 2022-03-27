@@ -7,7 +7,7 @@ on:
 
 jobs:
   job_one:
-    name: Deploy
+    name: Deployment
     runs-on: ubuntu-latest
     steps: 
     - name: testing jasminsweets.myvnc.com server ssh connection
