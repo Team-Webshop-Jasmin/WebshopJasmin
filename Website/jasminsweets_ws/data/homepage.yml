@@ -1,7 +1,7 @@
 ############################ banner ##########################
 banner:
   enable : true
-  title : "Orientalische Süßigkeiten, Regionale Zutaten. Frisch zubereitet"
+  title : "Orientalische Süßigkeiten, Regionale Zutaten, Frisch zubereitet"
   image : "images/photo1.png"
   # button
   button:
