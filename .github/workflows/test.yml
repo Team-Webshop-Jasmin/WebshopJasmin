@@ -6,7 +6,7 @@ on:
         
 jobs:
     test_push:
-        runs-on: ubunt-lastest
+        runs-on: ubunt-latest
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v1
