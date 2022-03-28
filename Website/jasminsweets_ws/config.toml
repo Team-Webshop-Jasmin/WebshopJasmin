@@ -1,0 +1,114 @@
+######################## default configuration ####################
+baseURL = "http://jasminsweets.myvnc.com/"
+languageCode = "en"
+title = "Jasmin Sweets"
+summaryLength = "20"
+paginate = 10
+disqusShortname = ""
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  link = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  link = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  link = "plugins/themify-icons/themify-icons.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  link = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  link = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  link = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  link = "plugins/google-map/gmap.js"
+
+
+############################## navigation ###############################
+[menu]
+
+  [[menu.main]]
+  name = "Produkte"
+  URL = "products"
+  weight = 1
+
+  [[menu.main]]
+  name = "FAQ"
+  URL = "faq"
+  weight = 2
+
+  [[menu.main]]
+  name = "Kontakt"
+  URL = "contact"
+  weight = 3
+
+  [[menu.main]]
+  name = "Login/Register"
+  URL = "login"
+  weight = 4
+
+  ############# footer menu #############
+  [[menu.footer]]
+  name = "Produkte"
+  URL = "products"
+  weight = 1
+
+  [[menu.footer]]
+  name = "FAQ"
+  URL = "faq"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Allgemeine Geschäftsbedingungen"
+  URL = "terms-conditions"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Kontakt"
+  URL = "contact"
+  weight = 4
+
+
+#################### default parameters ################################
+[params]
+logo = "images/ShopLogo.png"
+home = "Home"
+# Meta data
+description = "Von Kunafah bis zu Baklava, gibt es alles an Süßwaren was Ihr Herz begehrt."
+author = "Jasmin sweets"
+# google map
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+mapLatitude = "48.291684"
+mapLongitude = "14.301026550763966"
+mapMarker = "images/marker.png"
+# Contact Information
+mobile = "0676 6527623"
+email = "jasmin.webshop@gmail.com"
+location = "Hamerlingstraße 28"
+# copyright
+copyright = "| Copyright &copy; 2022 Jasmin Sweets Alle Rechte vorbehalten |"
+# Snipcart Credentials
+snipcartApiKey = "YWJiYTQ3NWMtOTY2Zi00M2M1LWI5ZTctM2NkNmRhNjhhOGYzNjM3ODI3OTQ5MDQ5MTMwMTQx"
+currencySymbol = "€"
+
+  # Preloader
+ [params.preloader]
+ enable = true
+ preloader = "images/ShopLogo.png"
+
+  # Social Site
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "https://www.facebook.com/jasminorientalsweets/community/"
+
+  [[params.social]]
+  icon = "ti-instagram"
+  link = "https://www.instagram.com/jasmin.oriental.sweets/"
+
+  # Contact Form
+  [params.contact]
+  formAction = "https://formspree.io/f/mvolqobw" # contact form works with formspree.io

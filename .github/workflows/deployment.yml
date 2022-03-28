@@ -1,0 +1,22 @@
+name: Deployment Workflow
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: Deployment Workflow
+    runs-on: ubuntu-latest
+
+    steps: 
+    - name: testing jasminsweets.myvnc.com server ssh connection
+      uses: appleboy/ssh-action@master
+      with: 
+        host: jasminsweets.myvnc.com
+        username: willi
+        key: ${{ secrets.JASMIN_SECRET }}
+        port: 22
+        script: |
+        cd /var/www/html
+        git pull origin master
+        git status
