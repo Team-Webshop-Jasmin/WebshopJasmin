@@ -46,6 +46,11 @@ disqusShortname = ""
   URL = "contact"
   weight = 3
 
+  [[menu.main]]
+  name = "Login/Register"
+  URL = "login"
+  weight = 4
+
   ############# footer menu #############
   [[menu.footer]]
   name = "Produkte"
