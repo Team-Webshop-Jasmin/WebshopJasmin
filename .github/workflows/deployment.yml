@@ -24,7 +24,10 @@ jobs:
         # extended: true
     
     - name: build Hugo website
-      run: hugo
+      run: |
+        pwd
+        ls -l
+        hugo
       working-directory: Website/jasminsweets_ws 
     
     - name: test ssh
