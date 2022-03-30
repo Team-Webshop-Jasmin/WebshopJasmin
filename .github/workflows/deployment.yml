@@ -17,9 +17,20 @@ jobs:
         server: ${{ secrets.SERVER }}
         alias: server
     
+    - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.91.2'
+          # extended: true
+    
+    - name: build Hugo website
+      run: hugo
+      working-directory: Website/jasminsweets_ws 
+    
     - name: test ssh
       run: |
-            ssh server ls -l
+        ssh server ls -l
+        
 
 
 
