@@ -28,7 +28,7 @@ jobs:
         pwd
         ls -l
         hugo
-      working-directory: Website/jasminsweets_ws 
+      working-directory: .Website/jasminsweets_ws 
     
     - name: test ssh
       run: |
