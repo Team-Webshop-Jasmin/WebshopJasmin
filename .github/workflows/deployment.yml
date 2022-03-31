@@ -23,6 +23,13 @@ jobs:
         hugo-version: 'latest'
         # extended: true
     
+    - name: build Hugo website
+      run: |
+        pwd
+        ls -l
+        hugo
+      working-directory: Website/jasminsweets_ws 
+    
     - name: test ssh
       run: |
         ssh server ls -l
