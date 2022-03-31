@@ -42,4 +42,5 @@ jobs:
     - name: deploy to server
       run: |
         cd /var/www/html
-        ls
+        pwd
+        ls -l
