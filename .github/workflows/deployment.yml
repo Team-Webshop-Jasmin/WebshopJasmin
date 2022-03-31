@@ -40,6 +40,6 @@ jobs:
         ssh server ls -l
 
     - name: deploy to server
-      run |
+      run: |
         cd /var/www/html
         ls
