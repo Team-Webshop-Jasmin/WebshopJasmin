@@ -41,6 +41,5 @@ jobs:
 
     - name: deploy to server
       run: |
-        cd /var/www/html
-        pwd
-        
+        scp -r * server:/var/www/html 
+      working-directory: Website/Jasminsweets_ws/public  
