@@ -42,4 +42,4 @@ jobs:
     - name: deploy to server
       run: |
         scp -r * server:/var/www/html 
-      working-directory: Website/Jasminsweets_ws/public  
+      working-directory: Website/jasminsweets_ws/public  
