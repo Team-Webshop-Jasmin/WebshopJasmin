@@ -1,8 +1,10 @@
 name: Deployment Workflow
 on:
   push:
-    branches: [ main ]
-    paths: Website/jasminsweets_ws/public  
+    branches: 
+      - main
+    paths: 
+      - Website/jasminsweets_ws/public  
 
 jobs:
   deploy:
