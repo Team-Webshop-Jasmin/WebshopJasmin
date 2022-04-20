@@ -7,7 +7,6 @@ on:
     paths: 
       - Website/jasminsweets_ws/**
 
-
 jobs:
   deploy:
     name: Deployment Workflow
