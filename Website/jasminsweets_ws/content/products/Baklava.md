@@ -14,7 +14,7 @@ beforeprice: ""
 shortDescription: ""
 
 #product ID
-productID: "4"
+productID: "1"
 
 #Gramm
 name: "Wie viel Gramm?"

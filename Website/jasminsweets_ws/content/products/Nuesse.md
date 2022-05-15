@@ -13,7 +13,7 @@ price: "20.00"
 shortDescription: "Delikate Nussmischungen"
 
 #product ID
-productID: "7"
+productID: "3"
 
 # type must be "products"
 type: "products"

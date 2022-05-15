@@ -13,7 +13,7 @@ price: "18.00"
 shortDescription: "Der beste arabische Kaffee in ganz Linz"
 
 #product ID
-productID: "6"
+productID: "2"
 
 #Gramm
 name: "Wie viel Gramm?"
