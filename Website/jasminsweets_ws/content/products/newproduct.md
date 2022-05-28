@@ -1,5 +1,5 @@
 ---
-title: "%%TITLE%%"
+title: "Schweinefleisch"
 date: 2019-10-17T11:22:16+06:00
 draft: false
 
@@ -7,7 +7,7 @@ draft: false
 description : ""
 
 # product Price
-price: "%%PRICE%%"
+price: "22,50"
 beforeprice: ""
 
 # Product Short Description
