@@ -3,6 +3,7 @@ import java.awt.desktop.ScreenSleepEvent;
 import java.io.*;
 import java.util.Scanner;
 import static java.sql.DriverManager.println;
+import com.company.DatabaseReader;
 
 public class Main {
 
@@ -36,8 +37,10 @@ public class Main {
     public static String SearchAndReplace (String fc){
         String name = "Schweinefleisch";
         String price = "22,50";
+        String description ="Eine Mischung an Baklava von bester Qualität. Sie haben die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. Lassen Sie sich von einer Mischung an feinsten Baklavasorten überraschen.";
         fc = fc.replace("%%TITLE%%", name);
         fc = fc.replace("%%PRICE%%", price);
+        fc = fc.replace("%%DESCRIPTION%%", description);
         return fc;
     }
 }

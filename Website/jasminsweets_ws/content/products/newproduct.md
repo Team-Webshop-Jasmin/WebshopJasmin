@@ -1,5 +1,5 @@
 ---
-title: "%%TITLE%%"
+title: "Schweinefleisch"
 date: 2019-10-17T11:22:16+06:00
 draft: false
 
@@ -7,7 +7,7 @@ draft: false
 description : ""
 
 # product Price
-price: "%%PRICE%%"
+price: "22,50"
 beforeprice: ""
 
 # Product Short Description
@@ -30,4 +30,4 @@ images:
 
 ---
 
-%%DESCRIPTION%%
+Eine Mischung an Baklava von bester Qualität. Sie haben die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. Lassen Sie sich von einer Mischung an feinsten Baklavasorten überraschen.
