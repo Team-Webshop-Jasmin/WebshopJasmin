@@ -36,7 +36,7 @@ public class DatabaseReader {
     public static int getAmountOfProducts(Connection con) throws SQLException {
         Statement stmt = con.createStatement();
 
-        ResultSet rs1 = stmt.executeQuery("SELECT  COUNT(*)FROM products.Products p ");
+        ResultSet rs1 = stmt.executeQuery("SELECT COUNT(*)FROM products.Products p ");
         int ammountofproducts = 0;
 
         while(rs1.next()){
@@ -48,6 +48,7 @@ public class DatabaseReader {
     public static String getProductNames(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
         String[] productnames = new String[ammountofproducts];
+        String newproductname ="";
         int i = 0;
 
        ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
@@ -57,13 +58,26 @@ public class DatabaseReader {
             i += 1;
         }
 
-        String newproductname = productnames[productnames.length-1];
+        newproductname = productnames[productnames.length-1];
 
         return newproductname;
     }
 
-    public static String getProductDesription(){
-        String newproductdescription="";
-        return newproductdescription;
+    public static String getProductPrice(Connection con, int ammountofproducts) throws SQLException {
+        Statement stmt = con.createStatement();
+        String[] productprices = new String[ammountofproducts];
+        String newproductprice="";
+        int i = 0;
+
+        ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
+
+        while (rs.next()){
+            productprices[i] = rs.getString("price");
+            i += 1;
+        }
+
+        newproductprice = productprices[productprices.length-1];
+
+        return newproductprice;
     }
 }
