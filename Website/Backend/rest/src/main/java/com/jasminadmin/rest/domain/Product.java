@@ -25,7 +25,6 @@ public class Product {
     //Constructor
 
     public Product() {
-
     }
 
     public Product(String title, double price, double beforeprice, String shortDescription, int productID, String name, String amount, String type) {
