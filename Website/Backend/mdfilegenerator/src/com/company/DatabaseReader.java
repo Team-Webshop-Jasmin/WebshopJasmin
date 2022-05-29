@@ -9,9 +9,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DatabaseReader {
-    public static void main(String[] args) throws IOException, SQLException {
+    public static void main(String[] args) throws SQLException {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root", "my-secret-pw");
-        int ammountofproducts = getAmountOfProducts(con);
     }
 
     public static void createConnection(){
@@ -54,7 +53,7 @@ public class DatabaseReader {
         return productnames;
     }
 
-    public static String getNameOfNewProduct(Connection con, int ammountofproducts) throws IOException, SQLException {
+    public static String getNameOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
         String[] productnames = new String[ammountofproducts];
         String newproductname ="";
@@ -72,7 +71,7 @@ public class DatabaseReader {
         return newproductname;
     }
 
-    public static String getPriceOfNewProduct(Connection con, int ammountofproducts) throws IOException, SQLException {
+    public static String getPriceOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
         String[] productprices = new String[ammountofproducts];
         String newproductprice ="";
@@ -90,7 +89,7 @@ public class DatabaseReader {
         return newproductprice;
     }
 
-    public static String getDescriptionOfNewProduct(Connection con, int ammountofproducts) throws IOException, SQLException {
+    public static String getDescriptionOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
         String[] productdescriptions = new String[ammountofproducts];
         String newproductdescription ="";
