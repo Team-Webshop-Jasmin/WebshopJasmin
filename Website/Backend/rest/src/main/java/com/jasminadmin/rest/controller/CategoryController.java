@@ -22,8 +22,8 @@ public class CategoryController {
 
     @GetMapping("/")
     public String viewHomePage(Model model) {
-        List<Category> listcategory = service.listAll();
-        model.addAttribute("listcategory", listcategory);
+        List<Category> listCategory = service.listAll();
+        model.addAttribute("list-category", listCategory);
         System.out.print("Get / ");
         return "index";
     }
@@ -35,13 +35,13 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String saveProduct(@ModelAttribute("category") Category prd) {
+    public String saveCategory(@ModelAttribute("category") Category prd) {
         service.save(prd);
         return "redirect:/";
     }
 
     @RequestMapping("/edit/{id}")
-    public ModelAndView showEditProductPage(@PathVariable(name = "id") int id) {
+    public ModelAndView showEditCategoryPage(@PathVariable(name = "id") int id) {
         ModelAndView mav = new ModelAndView("new");
         Category prd = service.get(id);
         mav.addObject("category", prd);
