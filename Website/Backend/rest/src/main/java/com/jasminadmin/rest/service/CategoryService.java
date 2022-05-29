@@ -1,23 +1,23 @@
 package com.jasminadmin.rest.service;
 
-import java.util.List;
-
-import com.jasminadmin.rest.domain.Product;
-import com.jasminadmin.rest.repository.ProductRepository;
+import com.jasminadmin.rest.domain.Category;
+import com.jasminadmin.rest.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
-public class ProductService {
+public class CategoryService {
     @Autowired
-    private ProductRepository repo;
-    public List<Product> listAll() {
+    private CategoryRepository repo;
+    public List<Category> listAll() {
         return repo.findAll();
     }
-    public void save(Product std) {
+    public void save(Category std) {
         repo.save(std);
     }
-    public Product get(long id) {
+    public Category get(long id) {
         return repo.findById(id).get();
     }
     public void delete(long id) {
