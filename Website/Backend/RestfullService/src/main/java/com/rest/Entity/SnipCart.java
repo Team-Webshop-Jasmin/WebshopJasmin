@@ -23,7 +23,7 @@ public class SnipCart {
         this.sizeSelector = sizeSelector;
         this.amount = amount;
     }
-    
+
     public Long getId() {
         return id;
     }

@@ -46,7 +46,6 @@ public class ProductController {
         Product prd = service.get(id);
         mav.addObject("product", prd);
         return mav;
-
     }
     @RequestMapping("/delete/{id}")
     public String deleteproduct(@PathVariable(name = "id") int id) {
