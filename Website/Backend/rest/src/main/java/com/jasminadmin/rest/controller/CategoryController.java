@@ -2,8 +2,8 @@ package com.jasminadmin.rest.controller;
 
 import java.util.List;
 
-import com.jasminadmin.rest.domain.Product;
-import com.jasminadmin.rest.service.ProductService;
+import com.jasminadmin.rest.domain.Category;
+import com.jasminadmin.rest.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,39 +16,39 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-public class ProductController {
+public class CategoryController {
     @Autowired
-    private ProductService service;
+    private CategoryService service;
 
     @GetMapping("/")
     public String viewHomePage(Model model) {
-        List<Product> listProduct = service.listAll();
-        model.addAttribute("list-product", listProduct);
+        List<Category> listCategory = service.listAll();
+        model.addAttribute("list-category", listCategory);
         System.out.print("Get / ");
         return "index";
     }
 
     @GetMapping("/new")
     public String add(Model model) {
-        model.addAttribute("product", new Product());
+        model.addAttribute("category", new Category());
         return "new";
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String saveProduct(@ModelAttribute("product") Product prd) {
+    public String saveCategory(@ModelAttribute("category") Category prd) {
         service.save(prd);
         return "redirect:/";
     }
 
     @RequestMapping("/edit/{id}")
-    public ModelAndView showEditProductPage(@PathVariable(name = "id") int id) {
+    public ModelAndView showEditCategoryPage(@PathVariable(name = "id") int id) {
         ModelAndView mav = new ModelAndView("new");
-        Product prd = service.get(id);
-        mav.addObject("product", prd);
+        Category prd = service.get(id);
+        mav.addObject("category", prd);
         return mav;
     }
     @RequestMapping("/delete/{id}")
-    public String deleteProduct(@PathVariable(name = "id") int id) {
+    public String deleteCategory(@PathVariable(name = "id") int id) {
         service.delete(id);
         return "redirect:/";
     }

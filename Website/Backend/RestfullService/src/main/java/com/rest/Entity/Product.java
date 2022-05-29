@@ -1,4 +1,5 @@
-package com.jasminadmin.rest.domain;
+package com.rest.Entity;
+
 
 import javax.persistence.*;
 

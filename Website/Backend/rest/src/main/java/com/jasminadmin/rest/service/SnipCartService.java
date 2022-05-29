@@ -1,23 +1,24 @@
 package com.jasminadmin.rest.service;
 
-import java.util.List;
 
-import com.jasminadmin.rest.domain.Product;
-import com.jasminadmin.rest.repository.ProductRepository;
+import com.jasminadmin.rest.domain.SnipCart;
+import com.jasminadmin.rest.repository.SnipCartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
-public class ProductService {
+public class SnipCartService {
     @Autowired
-    private ProductRepository repo;
-    public List<Product> listAll() {
+    private SnipCartRepository repo;
+    public List<SnipCart> listAll() {
         return repo.findAll();
     }
-    public void save(Product std) {
+    public void save(SnipCart std) {
         repo.save(std);
     }
-    public Product get(long id) {
+    public SnipCart get(long id) {
         return repo.findById(id).get();
     }
     public void delete(long id) {
