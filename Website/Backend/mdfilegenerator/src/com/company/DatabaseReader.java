@@ -2,23 +2,16 @@ package com.company;
 
 import javax.swing.plaf.nimbus.State;
 import javax.xml.crypto.Data;
+import java.io.IOException;
 import java.net.ConnectException;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DatabaseReader {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws IOException, SQLException {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root", "my-secret-pw");
-        int aop = getAmountOfProducts(con);
-        System.out.println(aop);
-
-
-        DatabaseReader dbreader = new DatabaseReader();
-        dbreader.createConnection();
-
-        getAmountOfProducts(con);
-        getProductNames(con, aop);
+        int ammountofproducts = getAmountOfProducts(con);
     }
 
     public static void createConnection(){
@@ -45,7 +38,7 @@ public class DatabaseReader {
         return ammountofproducts;
     }
 
-    public static String getProductNames(Connection con, int ammountofproducts) throws SQLException {
+    public static String[] getProductNames(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
         String[] productnames = new String[ammountofproducts];
         String newproductname ="";
@@ -58,15 +51,31 @@ public class DatabaseReader {
             i += 1;
         }
 
-        newproductname = productnames[productnames.length-1];
+        return productnames;
+    }
+
+    public static String getNameOfNewProduct(Connection con, int ammountofproducts) throws IOException, SQLException {
+        Statement stmt = con.createStatement();
+        String[] productnames = new String[ammountofproducts];
+        String newproductname ="";
+        int i = 0;
+
+        ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
+
+        while (rs.next()){
+            productnames[i] = rs.getString("name");
+            i += 1;
+        }
+
+        newproductname  = productnames[SelectedProduct.selectedproduct];
 
         return newproductname;
     }
 
-    public static String getProductPrice(Connection con, int ammountofproducts) throws SQLException {
+    public static String getPriceOfNewProduct(Connection con, int ammountofproducts) throws IOException, SQLException {
         Statement stmt = con.createStatement();
         String[] productprices = new String[ammountofproducts];
-        String newproductprice="";
+        String newproductprice ="";
         int i = 0;
 
         ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
@@ -76,8 +85,26 @@ public class DatabaseReader {
             i += 1;
         }
 
-        newproductprice = productprices[productprices.length-1];
+        newproductprice = productprices[SelectedProduct.selectedproduct];
 
         return newproductprice;
+    }
+
+    public static String getDescriptionOfNewProduct(Connection con, int ammountofproducts) throws IOException, SQLException {
+        Statement stmt = con.createStatement();
+        String[] productdescriptions = new String[ammountofproducts];
+        String newproductdescription ="";
+        int i = 0;
+
+        ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
+
+        while (rs.next()){
+            productdescriptions[i] = rs.getString("description");
+            i += 1;
+        }
+
+        newproductdescription = productdescriptions[SelectedProduct.selectedproduct];
+
+        return newproductdescription;
     }
 }
