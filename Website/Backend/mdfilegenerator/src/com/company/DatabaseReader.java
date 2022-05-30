@@ -89,21 +89,39 @@ public class DatabaseReader {
         return newproductprice;
     }
 
-    public static String getDescriptionOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
+    public static String getLongDescriptionOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
-        String[] productdescriptions = new String[ammountofproducts];
-        String newproductdescription ="";
+        String[] productlongdescriptions = new String[ammountofproducts];
+        String newproductlongdescription ="";
         int i = 0;
 
         ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
 
         while (rs.next()){
-            productdescriptions[i] = rs.getString("description");
+            productlongdescriptions[i] = rs.getString("long description");
             i += 1;
         }
 
-        newproductdescription = productdescriptions[SelectedProduct.selectedproduct];
+        newproductlongdescription = productlongdescriptions[SelectedProduct.selectedproduct];
 
-        return newproductdescription;
+        return newproductlongdescription;
+    }
+
+    public static String getShortDescriptionOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
+        Statement stmt = con.createStatement();
+        String[] productshortdescriptions = new String[ammountofproducts];
+        String newproductshortdescription ="";
+        int i = 0;
+
+        ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
+
+        while (rs.next()){
+            productshortdescriptions[i] = rs.getString("short description");
+            i += 1;
+        }
+
+        newproductshortdescription = productshortdescriptions[SelectedProduct.selectedproduct];
+
+        return newproductshortdescription;
     }
 }

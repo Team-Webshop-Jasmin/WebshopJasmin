@@ -54,11 +54,13 @@ public class Main {
 
         String name = DatabaseReader.getNameOfNewProduct(con, ammountofproducts);
         String price = DatabaseReader.getPriceOfNewProduct(con,ammountofproducts);
-        String description = DatabaseReader.getDescriptionOfNewProduct(con, ammountofproducts);
+        String longdescription = DatabaseReader.getLongDescriptionOfNewProduct(con, ammountofproducts);
+        String shortdescription = DatabaseReader.getShortDescriptionOfNewProduct(con, ammountofproducts);
 
         fc = fc.replace("%%TITLE%%", name);
         fc = fc.replace("%%PRICE%%", price);
-        fc = fc.replace("%%DESCRIPTION%%", description);
+        fc = fc.replace("%%LONGDESCRIPTION%%", longdescription);
+        fc = fc.replace("%%SHORTDESCRIPTION%%", shortdescription);
         
         return fc;
     }

@@ -8,20 +8,16 @@ description : ""
 
 # product Price
 price: "%%PRICE%%"
-beforeprice: ""
 
 # Product Short Description
-shortDescription: ""
+shortDescription: %%SHORTDESCRIPTION%%
 
 #product ID
 productID: "1"
 
 #Gramm
-name: "Wie viel Gramm?"
+sizeselector: "Wie viel Gramm?"
 amount: "400g|700g[+6.00]|1000g[+10.00]"
-
-# type must be "products"
-type: "products"
 
 # product Images
 # first image will be shown in the product page
@@ -30,4 +26,4 @@ images:
 
 ---
 
-%%DESCRIPTION%%
+%%LONGDESCRIPTION%%
