@@ -53,6 +53,24 @@ public class DatabaseReader {
         return productnames;
     }
 
+    public static int getIdOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
+        Statement stmt = con.createStatement();
+        int[] productids = new int[ammountofproducts];
+        int newproductid = 0;
+        int i = 0;
+
+        ResultSet rs = stmt.executeQuery("SELECT id FROM products.Products p");
+
+        while (rs.next()){
+            productids[i] = rs.getInt("id");
+            i+= 1;
+        }
+
+        newproductid = productids[SelectedProduct.selectedproduct];
+
+        return newproductid;
+    }
+
     public static String getNameOfNewProduct(Connection con, int ammountofproducts) throws SQLException {
         Statement stmt = con.createStatement();
         String[] productnames = new String[ammountofproducts];

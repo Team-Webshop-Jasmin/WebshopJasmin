@@ -12,10 +12,10 @@ price: "%%PRICE%%"
 # Product Short Description
 shortDescription: %%SHORTDESCRIPTION%%
 
-#product ID
-productID: "1"
+# product ID
+productID: "%%ID%%"
 
-#Gramm
+# Gramm
 sizeselector: "Wie viel Gramm?"
 amount: "400g|700g[+6.00]|1000g[+10.00]"
 

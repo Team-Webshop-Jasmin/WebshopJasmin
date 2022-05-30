@@ -37,10 +37,11 @@ public class Main {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
 
-        System.out.println("name of new product:");
+        System.out.println("Path where file will be saved:");
+        String filepath = reader.readLine();
+        System.out.println("Name of new product:");
         String filename = reader.readLine();
-
-        FileWriter writer = new FileWriter("C:\\Users\\willi\\Desktop\\Schule\\SYP\\Project Repo\\Website\\jasminsweets_ws\\content\\products\\" + filename + ".md");
+        FileWriter writer = new FileWriter(filepath + "\\" + filename + ".md");
 
         writer.write(fileContent);
         writer.close();
@@ -52,11 +53,13 @@ public class Main {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root", "my-secret-pw");
         int ammountofproducts = DatabaseReader.getAmountOfProducts(con);
 
+        String id = String.valueOf(DatabaseReader.getIdOfNewProduct(con, ammountofproducts));
         String name = DatabaseReader.getNameOfNewProduct(con, ammountofproducts);
         String price = DatabaseReader.getPriceOfNewProduct(con,ammountofproducts);
         String longdescription = DatabaseReader.getLongDescriptionOfNewProduct(con, ammountofproducts);
         String shortdescription = DatabaseReader.getShortDescriptionOfNewProduct(con, ammountofproducts);
 
+        fc = fc.replace("%%ID%%", id);
         fc = fc.replace("%%TITLE%%", name);
         fc = fc.replace("%%PRICE%%", price);
         fc = fc.replace("%%LONGDESCRIPTION%%", longdescription);
