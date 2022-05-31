@@ -1,46 +1,54 @@
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-  
-      document.getElementById("user_div").style.display = "block";
-      document.getElementById("login_div").style.display = "none";
-  
-      var user = firebase.auth().currentUser;
-  
-      if(user != null){
-  
-        var email_id = user.email;
-        document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-  
-      }
-  
-    } else {
-      // No user is signed in.
-  
-      document.getElementById("user_div").style.display = "none";
-      document.getElementById("login_div").style.display = "block";
-  
-    }
-  });
-  
-  function login(){
-  
-    var userEmail = document.getElementById("email_field").value;
-    var userPass = document.getElementById("password_field").value;
-  
-    firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-  
-      window.alert("Error : " + errorMessage);
-  
-      // ...
-    });
-  
+import React, { Component } from "react"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+
+function initNetlifyIdentity() {
+  console.log("initNetlifyIdentity called.")
+  const script = document.createElement("script");
+
+  script.src = "https://identity.netlify.com/v1/netlify-identity-widget.js"
+  script.async = true;
+
+  document.body.appendChild(script);
+}
+
+function openNetlifyModal() {
+  const netlifyIdentity = window.netlifyIdentity;
+
+  if(netlifyIdentity)
+    netlifyIdentity.open();
+  else
+    console.log('netlifyIdentity not defined')
+}
+
+class NetlifyIdentity extends Component {
+  componentDidMount() {
+    initNetlifyIdentity();
   }
-  
-  function logout(){
-    firebase.auth().signOut();
+
+  render() {
+    return(<div></div>)
   }
-  
+}
+
+const IndexPage = () => {
+  return(
+      <Layout>
+        <NetlifyIdentity />
+        <SEO title="Home" />
+        <h1>Hi people</h1>
+        <h2 onClick={() => { openNetlifyModal() }}>Login</h2>
+        <p>Welcome to your new Gatsby site.</p>
+        <p>Now go build something great.</p>
+        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+          <Image />
+        </div>
+        <Link to="/page-2/">Go to page 2</Link>
+      </Layout>
+  )
+}
+
+export default IndexPage

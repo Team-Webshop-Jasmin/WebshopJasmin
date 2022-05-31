@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://jasminsweets.myvnc.com/admin/admin/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+  </url><url>
+    <loc>http://jasminsweets.myvnc.com/admin/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+  </url><url>
     <loc>http://jasminsweets.myvnc.com/terms-conditions/</loc>
     <lastmod>2019-10-17T11:22:16+06:00</lastmod>
   </url><url>
@@ -18,9 +24,6 @@
     <lastmod>2019-10-17T11:22:16+06:00</lastmod>
   </url><url>
     <loc>http://jasminsweets.myvnc.com/products/nuesse/</loc>
-    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
-  </url><url>
-    <loc>http://jasminsweets.myvnc.com/products/n%C3%BCsse/</loc>
     <lastmod>2019-10-17T11:22:16+06:00</lastmod>
   </url><url>
     <loc>http://jasminsweets.myvnc.com/products/</loc>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Jasmin Sweets-Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">Jasmin Sweets Admin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+    </div>
+</nav>
+<div align="center">
+    <h1>Create New Product</h1>
+    <br />
+    <div class="col-sm-4">
+        <form action="#" th:action="@{/save}" th:object="${product}" method="post">
+
+
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product Title</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{title}" class="form-control" placeholder="Product Title" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product Price</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{price}" class="form-control" placeholder="Product Price" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product BeforePrice</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{beforeprice}" class="form-control" placeholder="Product BeforePrice" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product ShortDescription</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{shortDescription}" class="form-control" placeholder="Product ShortDescription" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product ID</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{productID}" class="form-control" placeholder="Product ID" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product Name</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{name}" class="form-control" placeholder="Product Name" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product Amount</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{amount}" class="form-control" placeholder="Product Amount" />
+                    </td>
+                </tr>
+            </div>
+            <div alight="left">
+                <tr>
+                    <label class="form-label" >Product Type</label>
+                    <td>
+                        <input type="hidden" th:field="*{id}" />
+                        <input type="text" th:field="*{type}" class="form-control" placeholder="type = products" />
+                    </td>
+                </tr>
+            </div>
+
+            <br>
+            <tr>
+                <td colspan="2"><input type="submit" class="btn btn-primary" value=" Submit "> </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

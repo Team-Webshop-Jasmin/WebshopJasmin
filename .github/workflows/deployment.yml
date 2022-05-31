@@ -1,7 +1,11 @@
 name: Deployment Workflow
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - main
+    
+    paths: 
+      - Website/jasminsweets_ws/**
 
 jobs:
   deploy:
@@ -9,14 +13,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-    - name: testing jasminsweets.myvnc.com server ssh connection
-      uses: appleboy/ssh-action@master
-      with: 
-        host: jasminsweets.myvnc.com
-        username: willi
-        key: ${{ secrets.JASMIN_SECRET }}
-        port: 22
-        script: |
-        cd /var/www/html
-        git pull origin master
-        git status
+    - uses: actions/checkout@v3
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+    - name: install ssh key
+      uses: caberger/install-ssh-key@v1.0
+      with:
+        ssh-private-key:  ${{ secrets.SSH_PRIVATE_KEY }}
+        user: ${{ secrets.SERVER_USER }}
+        server: ${{ secrets.SERVER }}
+        alias: server
+    
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        # extended: true
+    
+    - name: build Hugo website
+      run: |
+        pwd
+        ls -l
+        hugo
+      working-directory: Website/jasminsweets_ws 
+    
+    - name: test ssh
+      run: |
+        ssh server ls -l
+
+    - name: deploy to server
+      run: |
+        scp -r * server:/var/www/html 
+      working-directory: Website/jasminsweets_ws/public  

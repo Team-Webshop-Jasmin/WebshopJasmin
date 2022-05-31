@@ -14,7 +14,7 @@ priceBefore: ""
 shortDescription: "Arabische Kekse gefüllt mit Pistazien"
 
 #product ID
-productID: "3"
+productID: "4"
 
 #Gramm
 name: "Wie viel Gramm?"

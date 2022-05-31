@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para"></p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+  apiKey: "AIzaSyBGF9USNXwths-mOHmJgpu4mJIyScXFu4Q",
+  authDomain: "jasmin-cade1.firebaseapp.com",
+  projectId: "jasmin-cade1",
+  storageBucket: "jasmin-cade1.appspot.com",
+  messagingSenderId: "1018534576314",
+  appId: "1:1018534576314:web:b3d5b15f285c554a478283"
+};
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
