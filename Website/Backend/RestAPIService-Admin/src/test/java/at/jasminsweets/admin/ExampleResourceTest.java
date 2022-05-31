@@ -1,4 +1,4 @@
-package com.rest;
+package at.jasminsweets.admin;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
