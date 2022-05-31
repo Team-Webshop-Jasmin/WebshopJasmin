@@ -16,6 +16,7 @@ import java.util.Optional;
 @ApplicationScoped
 public class ProductService {
 
+<<<<<<< HEAD
     private ProductRepository productRepository;
     private ProductMapper productMapper;
 
@@ -46,4 +47,7 @@ public class ProductService {
         productRepository.persist(entity);
         productMapper.updateDomainFromEntity(entity, productModel);
     }
+=======
+
+>>>>>>> bc887148c383ce3ae70af647eb852b4ec922dce5
 }

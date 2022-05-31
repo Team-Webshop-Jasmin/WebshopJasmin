@@ -5,6 +5,7 @@ import at.jasminsweets.admin.persistence.model.ProductModel;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
+<<<<<<< HEAD
 
 import java.util.List;
 
@@ -22,3 +23,5 @@ public interface ProductMapper {
     void updateDomainFromEntity(Product entity, @MappingTarget ProductModel domain);
 
 }
+=======
+>>>>>>> bc887148c383ce3ae70af647eb852b4ec922dce5
