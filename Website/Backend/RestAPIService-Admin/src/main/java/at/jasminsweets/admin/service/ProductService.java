@@ -9,9 +9,5 @@ import java.util.List;
 @ApplicationScoped
 public class ProductService {
 
-    private ProductRepository productRepository;
 
-    public List<Product> findAll() {
-        return this.customerMapper.toDomainList(productRepository.findAll().list());
-    }
 }
