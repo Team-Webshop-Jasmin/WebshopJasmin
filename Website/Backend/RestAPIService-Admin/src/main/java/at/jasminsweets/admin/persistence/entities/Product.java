@@ -1,6 +1,8 @@
 package at.jasminsweets.admin.persistence.entities;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Product {
@@ -24,10 +26,6 @@ public class Product {
     @JoinColumn(name ="snipCart_Id")
     private SnipCart snipCart;
 
-    @ManyToOne
-    @JoinColumn(name ="category_id")
-    private Category category;
-
     public Product(){}
 
     public Product(String title, double price, String shortDescription, String longDescription) {
@@ -41,27 +39,48 @@ public class Product {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public double getPrice() {
         return price;
     }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public String getShortDescription() {
         return shortDescription;
+    }
+
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
     }
 
     public String getLongDescription() {
         return longDescription;
     }
 
+    public void setLongDescription(String longDescription) {
+        this.longDescription = longDescription;
+    }
+
     public SnipCart getSnipCart() {
         return snipCart;
     }
 
-    public Category getCategory() {
-        return category;
+    public void setSnipCart(SnipCart snipCart) {
+        this.snipCart = snipCart;
     }
+
 }
