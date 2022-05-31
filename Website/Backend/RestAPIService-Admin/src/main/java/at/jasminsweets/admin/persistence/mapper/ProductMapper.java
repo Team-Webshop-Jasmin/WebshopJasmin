@@ -1,21 +1,24 @@
 package at.jasminsweets.admin.persistence.mapper;
 
+import at.jasminsweets.admin.persistence.entities.Product;
+import at.jasminsweets.admin.persistence.model.ProductModel;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
-@Mapper(componentModel = "cdi")
+import java.util.List;
+
 public interface ProductMapper {
 
-    List<Customer> toDomainList(List<CustomerEntity> entities);
+    List<ProductModel> toDomainList(List<Product> entities);
 
-    Customer toDomain(CustomerEntity entity);
+    Product toDomain(Product entity);
 
     @InheritInverseConfiguration(name = "toDomain")
-    CustomerEntity toEntity(Customer domain);
+    Product toEntity(ProductModel domain);
 
-    void updateEntityFromDomain(Customer domain, @MappingTarget CustomerEntity entity);
+    void updateEntityFromDomain(ProductModel domain, @MappingTarget Product entity);
 
-    void updateDomainFromEntity(CustomerEntity entity, @MappingTarget Customer domain);
+    void updateDomainFromEntity(Product entity, @MappingTarget ProductModel domain);
 
 }
