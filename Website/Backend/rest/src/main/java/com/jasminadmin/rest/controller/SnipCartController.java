@@ -1,4 +1,4 @@
-package com.jasminadmin.rest.controller;
+/*package com.jasminadmin.rest.controller;
 
 import com.jasminadmin.rest.domain.SnipCart;
 import com.jasminadmin.rest.service.SnipCartService;
@@ -18,33 +18,33 @@ public class SnipCartController {
     @GetMapping("/")
     public String viewHomePage(Model model) {
         List<SnipCart> listSnipCart = service.listAll();
-        model.addAttribute("list-snipCart", listSnipCart);
-        System.out.print("Get / ");
-        return "index";
+        model.addAttribute("listSnipCart", listSnipCart);
+        return "indexsnipcart";
     }
 
-    @GetMapping("/new")
+    @GetMapping("/newSnipCart")
     public String add(Model model) {
         model.addAttribute("snipCart", new SnipCart());
-        return "new";
+        return "newSnipCart";
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/savesc", method = RequestMethod.POST)
     public String saveSnipCart(@ModelAttribute("snipCart") SnipCart prd) {
         service.save(prd);
         return "redirect:/";
     }
 
-    @RequestMapping("/edit/{id}")
+    @RequestMapping("/editsc/{id}")
     public ModelAndView showEditSnipCartPage(@PathVariable(name = "id") int id) {
         ModelAndView mav = new ModelAndView("new");
         SnipCart prd = service.get(id);
         mav.addObject("snipCart", prd);
         return mav;
     }
-    @RequestMapping("/delete/{id}")
+    @RequestMapping("/deletesc/{id}")
     public String deleteSnipCart(@PathVariable(name = "id") int id) {
         service.delete(id);
         return "redirect:/";
     }
 }
+*/

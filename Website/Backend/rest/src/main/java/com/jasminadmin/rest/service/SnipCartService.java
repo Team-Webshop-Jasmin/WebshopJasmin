@@ -1,4 +1,4 @@
-package com.jasminadmin.rest.service;
+/*package com.jasminadmin.rest.service;
 
 
 import com.jasminadmin.rest.domain.SnipCart;
@@ -24,4 +24,4 @@ public class SnipCartService {
     public void delete(long id) {
         repo.deleteById(id);
     }
-}
+}*/

@@ -35,7 +35,6 @@
 
 <div class="card" style="padding-top: 50px;">
     <div class="card-body">
-
         <div th:switch="${product}" class="container my-5">
             <p class="my-5">
                 <a th:href="@{'/new'}" class="btn btn-primary">
@@ -47,30 +46,22 @@
                     <table class="table">
                         <thead class="thead-dark">
                         <tr>
-                            <th>ProductDB ID</th>
+                            <th>Product Id</th>
                             <th>Title</th>
                             <th>Price</th>
-                            <th>BeforePrice</th>
                             <th>ShortDescription</th>
-                            <th>Product ID</th>
-                            <th>Name</th>
-                            <th>Amount</th>
-                            <th>Type</th>
+                            <th>LongDescription</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr  th:each="product : ${listproduct }">
+                        <tr  th:each="product : ${listProduct}">
                             <td th:text="${product.id}"></td>
                             <td th:text="${product.title}"></td>
                             <td th:text="${product.price}"></td>
-                            <td th:text="${product.beforeprice}"></td>
                             <td th:text="${product.shortDescription}"></td>
-                            <td th:text="${product.productID}"></td>
-                            <td th:text="${product.name}"></td>
-                            <td th:text="${product.amount}"></td>
-                            <td th:text="${product.type}"></td>
+                            <td th:text="${product.longDescription}"></td>
                             <td>
                                 <a th:href="@{'/edit/' + ${product.id}}" class="btn btn-primary">
                                     <i class="fas fa-user-edit ml-2"></i>

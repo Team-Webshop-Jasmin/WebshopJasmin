@@ -24,10 +24,6 @@ public class Product {
     @JoinColumn(name ="snipCart_Id")
     private SnipCart snipCart;
 
-    @ManyToOne
-    @JoinColumn(name ="category_id")
-    private Category category;
-
     public Product(){}
 
     public Product(String title, double price, String shortDescription, String longDescription) {
@@ -59,9 +55,5 @@ public class Product {
 
     public SnipCart getSnipCart() {
         return snipCart;
-    }
-
-    public Category getCategory() {
-        return category;
     }
 }
