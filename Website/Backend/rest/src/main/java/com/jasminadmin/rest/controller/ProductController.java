@@ -22,8 +22,8 @@ public class ProductController {
 
     @GetMapping("/")
     public String viewHomePage(Model model) {
-        List<Product> listProduct = service.listAll();
-        model.addAttribute("listProduct", listProduct);
+        List<Product> listproduct = service.listAll();
+        model.addAttribute("listproduct", listproduct);
         System.out.print("Get / ");
         return "index";
     }
@@ -46,9 +46,10 @@ public class ProductController {
         Product prd = service.get(id);
         mav.addObject("product", prd);
         return mav;
+
     }
     @RequestMapping("/delete/{id}")
-    public String deleteProduct(@PathVariable(name = "id") int id) {
+    public String deleteproduct(@PathVariable(name = "id") int id) {
         service.delete(id);
         return "redirect:/";
     }
