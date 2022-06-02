@@ -1,7 +1,10 @@
 package at.jasminsweets.admin.controller;
 
 import at.jasminsweets.admin.domain.Product;
+import at.jasminsweets.admin.model.ProductModel;
+import io.smallrye.common.constraint.NotNull;
 
+import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -18,11 +21,16 @@ public class ProductController {
     @GET
     public Response getList(){
         List<Product> product = Product.findAll().list();
+
         return Response.ok(product).build();
     }
 
     @POST
-    public Response save(){
+    @Transactional
+    public Response save(@NotNull ProductModel model){
+        Product product = new Product(model.title, model.price, model.shortDescription, model.longDescription);
+        product.persist();
 
+        return Response.ok(product).build();
     }
 }

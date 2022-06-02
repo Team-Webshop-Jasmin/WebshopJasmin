@@ -68,6 +68,10 @@
           <artifactId>quarkus-hibernate-orm-panache</artifactId>
           <version>2.9.2.Final</version>
       </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-mysql</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
