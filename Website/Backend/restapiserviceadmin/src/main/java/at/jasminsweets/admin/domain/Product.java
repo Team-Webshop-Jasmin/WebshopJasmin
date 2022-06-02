@@ -16,11 +16,36 @@ public class Product extends PanacheEntity {
 
     //Constructor
     public Product(){}
-
     public Product(String title, String price, String shortDescription, String longDescription) {
         this.title = title;
         this.price = price;
         this.shortDescription = shortDescription;
+        this.longDescription = longDescription;
+    }
+
+    //Getter and Setter
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public String getPrice() {
+        return price;
+    }
+    public void setPrice(String price) {
+        this.price = price;
+    }
+    public String getShortDescription() {
+        return shortDescription;
+    }
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
+    public String getLongDescription() {
+        return longDescription;
+    }
+    public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
     }
 }
