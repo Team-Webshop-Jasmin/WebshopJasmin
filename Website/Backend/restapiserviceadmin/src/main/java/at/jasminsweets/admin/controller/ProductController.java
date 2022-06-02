@@ -5,12 +5,8 @@ import at.jasminsweets.admin.model.ProductModel;
 import io.smallrye.common.constraint.NotNull;
 
 import javax.transaction.Transactional;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.*;
+import javax.ws.rs.core.*;
 import java.util.List;
 
 @Path("/product")
@@ -25,6 +21,15 @@ public class ProductController {
         return Response.ok(product).build();
     }
 
+    //Get Product by ID
+    @GET
+    @Path("{id}")
+    public Response getSingle(@PathParam("id") Long id){
+        Product product = Product.findById(id);
+        return Response.ok(product).build();
+    }
+
+    //Add new Product
     @POST
     @Transactional
     public Response save(@NotNull ProductModel model){
@@ -32,5 +37,37 @@ public class ProductController {
         product.persist();
 
         return Response.ok(product).build();
+    }
+
+    //Edit a Product by ID
+    @PUT
+    @Path("{id}")
+    @Transactional
+    public Response update(@PathParam("id") Long id, @NotNull ProductModel model){
+        Product product = Product.findById(id);
+
+        if(product == null){
+            throw new WebApplicationException("Product with this Id does not exist!", 404);
+        }
+        product.title = model.title;
+        product.price = model.price;
+        product.shortDescription = model.shortDescription;
+        product.longDescription = model.longDescription;
+        product.persist();
+
+        return Response.ok(product).build();
+    }
+
+    //Delete Product by ID
+    @DELETE
+    @Path("{id}")
+    @Transactional
+    public Response delete(@PathParam("id") Long id){
+        Product product = Product.findById(id);
+        if(product == null){
+            throw new WebApplicationException("Product with this Id does not exist!", 404);
+        }
+        product.delete();
+        return Response.ok("Deleted successfully!").build();
     }
 }
