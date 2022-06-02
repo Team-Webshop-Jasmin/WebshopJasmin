@@ -3,6 +3,8 @@ package at.jasminsweets.admin.domain;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.smallrye.common.constraint.NotNull;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Product extends PanacheEntity {
@@ -13,6 +15,9 @@ public class Product extends PanacheEntity {
     public String price;
     public String shortDescription;
     public String longDescription;
+    @OneToOne
+    @JoinColumn(name ="snipCart_Id")
+    private SnipCart snipCart;
 
     //Constructor
     public Product(){}
@@ -47,5 +52,11 @@ public class Product extends PanacheEntity {
     }
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
+    }
+    public SnipCart getSnipCart() {
+        return snipCart;
+    }
+    public void setSnipCart(SnipCart snipCart) {
+        this.snipCart = snipCart;
     }
 }
