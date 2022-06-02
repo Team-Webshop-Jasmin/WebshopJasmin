@@ -1,7 +1,9 @@
 package at.jasminsweets.admin.controller;
 
 import at.jasminsweets.admin.domain.Product;
+import at.jasminsweets.admin.domain.SnipCart;
 import at.jasminsweets.admin.model.ProductModel;
+import at.jasminsweets.admin.model.SnipCartModel;
 import io.smallrye.common.constraint.NotNull;
 
 import javax.transaction.Transactional;
@@ -12,7 +14,6 @@ import java.util.List;
 @Path("/product")
 @Produces(MediaType.APPLICATION_JSON)
 public class ProductController {
-
     //Get All Products from Database
     @GET
     public Response getList(){
@@ -26,6 +27,7 @@ public class ProductController {
     @Path("{id}")
     public Response getSingle(@PathParam("id") Long id){
         Product product = Product.findById(id);
+
         return Response.ok(product).build();
     }
 
