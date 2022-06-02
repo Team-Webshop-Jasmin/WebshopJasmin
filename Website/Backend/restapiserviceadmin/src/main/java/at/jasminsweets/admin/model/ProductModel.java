@@ -1,7 +1,11 @@
 package at.jasminsweets.admin.model;
 
+import at.jasminsweets.admin.domain.SnipCart;
 import io.smallrye.common.constraint.NotNull;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 public class ProductModel {
     //Attribute
