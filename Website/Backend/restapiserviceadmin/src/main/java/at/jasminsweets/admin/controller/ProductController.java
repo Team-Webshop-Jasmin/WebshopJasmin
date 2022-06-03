@@ -1,9 +1,7 @@
 package at.jasminsweets.admin.controller;
 
 import at.jasminsweets.admin.domain.Product;
-import at.jasminsweets.admin.domain.SnipCart;
 import at.jasminsweets.admin.model.ProductModel;
-import at.jasminsweets.admin.model.SnipCartModel;
 import io.smallrye.common.constraint.NotNull;
 
 import javax.transaction.Transactional;
@@ -47,7 +45,6 @@ public class ProductController {
     @Transactional
     public Response update(@PathParam("id") Long id, @NotNull ProductModel model){
         Product product = Product.findById(id);
-
         if(product == null){
             throw new WebApplicationException("Product with this Id does not exist!", 404);
         }
@@ -70,6 +67,7 @@ public class ProductController {
             throw new WebApplicationException("Product with this Id does not exist!", 404);
         }
         product.delete();
+
         return Response.ok("Deleted successfully!").build();
     }
 }
