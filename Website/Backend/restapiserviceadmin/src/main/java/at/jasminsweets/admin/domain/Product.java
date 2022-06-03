@@ -15,9 +15,6 @@ public class Product extends PanacheEntity {
     public String price;
     public String shortDescription;
     public String longDescription;
-    @OneToOne
-    @JoinColumn(name ="snipCart_Id")
-    private SnipCart snipCart;
 
     //Constructor
     public Product(){}
@@ -52,11 +49,5 @@ public class Product extends PanacheEntity {
     }
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
-    }
-    public SnipCart getSnipCart() {
-        return snipCart;
-    }
-    public void setSnipCart(SnipCart snipCart) {
-        this.snipCart = snipCart;
     }
 }
