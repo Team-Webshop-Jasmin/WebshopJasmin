@@ -2,9 +2,8 @@ package at.jasminsweets.admin.domain;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.smallrye.common.constraint.NotNull;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+
+import javax.persistence.*;
 
 @Entity
 public class Product extends PanacheEntity {
@@ -15,6 +14,9 @@ public class Product extends PanacheEntity {
     public String price;
     public String shortDescription;
     public String longDescription;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category")
+    public Category category;
 
     //Constructor
     public Product(){}

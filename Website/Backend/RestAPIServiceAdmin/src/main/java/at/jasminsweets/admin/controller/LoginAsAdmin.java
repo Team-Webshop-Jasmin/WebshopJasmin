@@ -25,7 +25,7 @@ public class LoginAsAdmin {
     @POST
     @Transactional
     public Response checkLoggin(@NotNull AdminLogModel model){
-        AdminLog adminLog = new AdminLog();
+        AdminLog adminLog = AdminLog.findById(13);
         if (adminLog.emailAdress == model.emailAdress && adminLog.password == model.password){
             islogged = true;
             return Response.ok("Logged in successfully!").build();
