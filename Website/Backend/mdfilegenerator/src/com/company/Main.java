@@ -1,16 +1,9 @@
 package com.company;
-import java.awt.desktop.ScreenSleepEvent;
 import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Scanner;
-
-import static java.sql.DriverManager.getConnection;
-import static java.sql.DriverManager.println;
-import com.company.DatabaseReader;
-
-import javax.xml.crypto.Data;
 
 public class Main {
 
@@ -33,7 +26,7 @@ public class Main {
 
         return fc;
     }
-    public static Writer fileWriter(String fileContent) throws IOException {
+    public static void fileWriter(String fileContent) throws IOException {
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
 
@@ -45,11 +38,9 @@ public class Main {
 
         writer.write(fileContent);
         writer.close();
-
-        return writer;
     }
 
-    public static String searchAndReplace (String fc) throws SQLException, IOException {
+    public static String searchAndReplace (String fc) throws SQLException {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root", "my-secret-pw");
         int ammountofproducts = DatabaseReader.getAmountOfProducts(con);
 
@@ -69,7 +60,7 @@ public class Main {
     }
 
     public static int selectProductToAdd() throws IOException {
-        int productselector = 0;
+        int productselector;
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
 
