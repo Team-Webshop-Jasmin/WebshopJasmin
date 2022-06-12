@@ -13,6 +13,9 @@ productID: "1"
 name: "Wie viel Gramm?"
 amount: "400g|700g[+6.00]|1000g[+10.00]"
 
+
+# product Images
+# first image will be shown in the product page
 images:
   - image: "images/products/Produkt 5/Unbenannt.png"
 
