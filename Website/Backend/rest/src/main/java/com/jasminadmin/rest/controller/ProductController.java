@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
+
 public class ProductController {
     @Autowired
     private ProductService service;
@@ -24,7 +25,7 @@ public class ProductController {
     public String viewHomePage(Model model) {
         List<Product> listproduct = service.listAll();
         model.addAttribute("listproduct", listproduct);
-        System.out.print("Get / ");
+        System.out.print("Get/");
         return "index";
     }
 
