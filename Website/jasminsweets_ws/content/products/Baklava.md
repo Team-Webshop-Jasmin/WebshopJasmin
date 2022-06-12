@@ -1,7 +1,6 @@
 ---
 title: "Baklava"
 
-description : ""
 
 price: "22.00"
 beforeprice: ""
