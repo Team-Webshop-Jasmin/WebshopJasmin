@@ -15,6 +15,10 @@ public class ProductModel {
     public String shortDescription;
     @Schema(example = "Schmeckt gut, weil es aus Honig besteht")
     public String longDescription;
+    @Schema(example = "Wie viel Gramm?")
+    public String sizeSelector;
+    @Schema(example = "400g|700g[+6.00]|1000g[+10.00]")
+    public String amount;
 
     //Constructor
     public ProductModel(){}

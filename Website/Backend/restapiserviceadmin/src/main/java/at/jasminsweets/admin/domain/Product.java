@@ -14,17 +14,20 @@ public class Product extends PanacheEntity {
     public String price;
     public String shortDescription;
     public String longDescription;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category")
-    public Category category;
+    public String sizeSelector;
+    public String amount;
+
 
     //Constructor
     public Product(){}
-    public Product(String title, String price, String shortDescription, String longDescription) {
+
+    public Product(String title, String price, String shortDescription, String longDescription, String sizeSelector, String amount) {
         this.title = title;
         this.price = price;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
+        this.sizeSelector = sizeSelector;
+        this.amount = amount;
     }
 
     //Getter and Setter
@@ -51,5 +54,17 @@ public class Product extends PanacheEntity {
     }
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
+    }
+    public String getSizeSelector() {
+        return sizeSelector;
+    }
+    public void setSizeSelector(String sizeSelector) {
+        this.sizeSelector = sizeSelector;
+    }
+    public String getAmount() {
+        return amount;
+    }
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 }

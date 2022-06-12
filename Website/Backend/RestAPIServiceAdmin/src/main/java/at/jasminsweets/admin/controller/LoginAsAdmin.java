@@ -3,6 +3,7 @@ package at.jasminsweets.admin.controller;
 import at.jasminsweets.admin.domain.AdminLog;
 import at.jasminsweets.admin.domain.Product;
 import at.jasminsweets.admin.model.AdminLogModel;
+import at.jasminsweets.admin.model.ProductModel;
 import io.smallrye.common.constraint.NotNull;
 
 import javax.transaction.Transactional;
@@ -14,18 +15,21 @@ import java.util.List;
 @Path("/admin")
 @Produces(MediaType.APPLICATION_JSON)
 public class LoginAsAdmin {
-    private boolean islogged = false;
+    public boolean islogged = false;
 
-    @GET
-    public Response getList(){
-        List<AdminLog> adminLog = AdminLog.findAll().list();
+    /*@GET
+    @Path("{id}")
+    public Response getSingle(@PathParam("id") Long id){
+        AdminLog adminLog = AdminLog.findById(id);
+
         return Response.ok(adminLog).build();
-    }
+    }*/
 
     @POST
+    @Path("{id}")
     @Transactional
-    public Response checkLoggin(@NotNull AdminLogModel model){
-        AdminLog adminLog = AdminLog.findById(13);
+    public Response checkLoggin(@PathParam("id") Long id, @NotNull AdminLogModel model){
+        AdminLog adminLog = AdminLog.findById(id);
         if (adminLog.emailAdress == model.emailAdress && adminLog.password == model.password){
             islogged = true;
             return Response.ok("Logged in successfully!").build();
@@ -34,6 +38,7 @@ public class LoginAsAdmin {
             throw new WebApplicationException("Email-Adress or Password is incorrect!", 404);
         }
     }
+
     public boolean isLoggedIn(){
         boolean result = false;
         if (islogged == true){

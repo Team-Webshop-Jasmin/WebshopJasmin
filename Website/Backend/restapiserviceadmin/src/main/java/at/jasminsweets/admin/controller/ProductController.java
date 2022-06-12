@@ -39,7 +39,7 @@ public class ProductController {
     @POST
     @Transactional
     public Response save(@NotNull ProductModel model){
-        Product product = new Product(model.title, model.price, model.shortDescription, model.longDescription);
+        Product product = new Product(model.title, model.price, model.shortDescription, model.longDescription, model.sizeSelector, model.amount);
         product.persist();
 
         return Response.ok(product).build();
@@ -58,6 +58,8 @@ public class ProductController {
         product.price = model.price;
         product.shortDescription = model.shortDescription;
         product.longDescription = model.longDescription;
+        product.sizeSelector = model.sizeSelector;
+        product.amount = model.amount;
         product.persist();
 
         return Response.ok(product).build();
