@@ -13,6 +13,7 @@ import java.net.ConnectException;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.acme.SelectedProduct;
 
 public class DatabaseReader {
     public static void main(String[] args) {
@@ -126,7 +127,7 @@ public class DatabaseReader {
         String newproductshortdescription;
         int i = 0;
 
-        ResultSet rs = stmt.executeQuery("SELECT (*) FROM products.Products p");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM products.Products p");
 
         while (rs.next()){
             productshortdescriptions[i] = rs.getString("short description");
