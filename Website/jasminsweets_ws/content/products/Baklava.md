@@ -5,7 +5,8 @@ title: "Baklava"
 price: "22.00"
 beforeprice: ""
 
-shortDescription: ""
+# Product Short Description
+shortDescription: "Einen Mix aud die besten Baklava sorten"
 
 productID: "1"
 
