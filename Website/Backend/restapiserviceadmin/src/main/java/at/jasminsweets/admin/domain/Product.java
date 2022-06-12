@@ -15,7 +15,7 @@ public class Product extends PanacheEntity {
     public String shortDescription;
     public String longDescription;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category")
+    @JoinColumn(name = "catagory")
     public Category category;
 
     //Constructor
