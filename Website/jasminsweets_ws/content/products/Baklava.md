@@ -6,7 +6,7 @@ price: "22.00"
 beforeprice: ""
 
 # Product Short Description
-shortDescription: "Einen Mix aud die besten Baklava sorten"
+shortDescription: "Ein Mix aud den besten Baklava Sorten"
 
 productID: "1"
 
@@ -21,4 +21,4 @@ images:
 
 ---
 
-Eine Mischung an Baklava von bester Qualität. Sie haben die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. Lassen Sie sich von einer Mischung an feinsten Baklavasorten überraschen.
+Eine Mischung aus Baklava von bester Qualität. Sie haben die Möglichkeit die verschiedenen Spezialitäten vorort zu probieren und sich selbst zu überzeugen. Lassen Sie sich von einer Mischung aus feinsten Baklavasorten überraschen.
