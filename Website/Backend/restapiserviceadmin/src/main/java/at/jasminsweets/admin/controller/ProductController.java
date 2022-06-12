@@ -40,6 +40,7 @@ public class ProductController {
 
     //Add new Product
     @POST
+    @Produces(MediaType.TEXT_PLAIN)
     @Transactional
     public Response save(@NotNull ProductModel model){
         Product product = new Product(model.title, model.price, model.shortDescription, model.longDescription, model.sizeSelector, model.amount);

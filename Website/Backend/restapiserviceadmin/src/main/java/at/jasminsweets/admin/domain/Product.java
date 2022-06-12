@@ -13,6 +13,7 @@ public class Product extends PanacheEntity {
     @NotNull
     public String price;
     public String shortDescription;
+    @Column(length = 1000000)
     public String longDescription;
     public String sizeSelector;
     public String amount;

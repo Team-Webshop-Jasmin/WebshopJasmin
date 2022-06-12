@@ -28,6 +28,4 @@ images:
   - image: "images/products/Produkt 6/kaffeebohnen.png"
 
 ---
-Der beste arabische Kaffee in ganz Linz
-
-In der arabischen Kultur ist Kaffee ein sehr wichtiges Getränk. Unser Kaffee ist eine Mischung aus Kolumbianischen und Brazilianischen Bohnen mit Kardamom gemahlen um einen besonderen Nachgeschmack zu erhalten. Nur für Kaffeeliebhaber empfohlen. 
+Der beste arabische Kaffee in ganz Linz. In der arabischen Kultur ist Kaffee ein sehr wichtiges Getränk. Unser Kaffee ist eine Mischung aus Kolumbianischen und Brasilianischen Bohnen mit Kardamom gemahlen um einen besonderen Nachgeschmack zu erhalten. Nur für Kaffeeliebhaber empfohlen. 

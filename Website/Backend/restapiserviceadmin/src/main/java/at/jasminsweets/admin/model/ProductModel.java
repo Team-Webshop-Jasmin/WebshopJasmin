@@ -3,6 +3,8 @@ package at.jasminsweets.admin.model;
 import io.smallrye.common.constraint.NotNull;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
+import javax.persistence.Column;
+
 public class ProductModel {
     //Attribute
     @NotNull
@@ -13,6 +15,7 @@ public class ProductModel {
     public String price;
     @Schema(example = "Schmeckt gut")
     public String shortDescription;
+    @Column(length = 1000000)
     @Schema(example = "Schmeckt gut, weil es aus Honig besteht")
     public String longDescription;
     @Schema(example = "Wie viel Gramm?")
