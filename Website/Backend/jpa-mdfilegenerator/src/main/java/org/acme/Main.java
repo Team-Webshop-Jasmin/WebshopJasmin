@@ -9,7 +9,9 @@ import java.util.Scanner;
 import static java.sql.DriverManager.getConnection;
 import static java.sql.DriverManager.println;
 import org.acme.DatabaseReader;
-
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.xml.crypto.Data;
 
 public class Main {
