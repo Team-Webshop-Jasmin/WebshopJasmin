@@ -17,8 +17,6 @@ import org.acme.SelectedProduct;
 
 public class DatabaseReader {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jasmin-persistence-unit");
-        EntityManager em = emf.createEntityManager();
     }
 
     public static int getAmountOfProducts(Connection con) throws SQLException {
