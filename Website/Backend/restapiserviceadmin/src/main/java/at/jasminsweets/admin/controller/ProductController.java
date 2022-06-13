@@ -15,15 +15,6 @@ public class ProductController {
     //Get All Products from Database
     @GET
     public Response getList(){
-        /*LoginAsAdmin loginAsAdmin = new LoginAsAdmin();
-        if (loginAsAdmin.isLoggedIn() == true){
-            List<Product> product = Product.findAll().list();
-
-            return Response.ok(product).build();
-        }
-        else{
-            throw new WebApplicationException("You must Login as a Admin", 404);
-        }*/
         List<Product> product = Product.findAll().list();
 
         return Response.ok(product).build();
