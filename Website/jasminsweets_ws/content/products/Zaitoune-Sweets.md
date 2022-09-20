@@ -13,10 +13,6 @@ shortDescription: "Arabische Kekse gefüllt mit Pistazien"
 #product ID
 productID: "4"
 
-#Gramm
-name: "Wie viel Gramm?"
-amount: "500g"
-
 # type must be "products"
 type: "products"
 

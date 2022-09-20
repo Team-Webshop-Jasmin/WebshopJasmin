@@ -12,10 +12,6 @@ shortDescription: "Der beste arabische Kaffee in ganz Linz"
 #product ID
 productID: "2"
 
-#Gramm
-name: "Wie viel Gramm?"
-amount: "250g[-13.50]|500g[-9.00]|1000g"
-
 # type must be "products"
 type: "products"
 
